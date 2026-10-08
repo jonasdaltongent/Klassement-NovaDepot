@@ -1,0 +1,50 @@
+{
+  "lesid": "novadepot-klassement",
+  "lesnr": "07",
+  "titel": "Werkplek 2 - Het digitale klassement (klasseren)",
+  "week": 7,
+  "schooljaar": "2026-2027",
+  "datum": "2026-10-13",
+  "_opmerking_datum": "Uur 1 van de week: 4ORLOb di 13 okt (8ste uur), 3ORLO di 13 okt (9de uur), 4ORLOa wo 14 okt (4de uur).",
+  "klasgroepen": [
+    "ORLO"
+  ],
+  "_opmerking_klasgroepen": "De klasgroepcode moet 'ORLO' zijn: daarmee telt het blad 'ORLO' de regels op. De echte klasnamen staan hieronder.",
+  "klasnaam": "3ORLO, 4ORLOa, 4ORLOb",
+  "finaliteit": "arbeidsmarktgerichte finaliteit",
+  "lesduur_minuten": 50,
+  "evaluatie": "formatief",
+  "deadline": "2026-10-16T20:00",
+  "bron": "https://github.com/jonasdaltongent/Klassement-NovaDepot",
+  "_opmerking_bron": "Nog niet gepubliceerd. Pas dit aan als de repository anders heet.",
+  "doelen": [
+    {
+      "code": "BK2_02.09",
+      "rol": "kern"
+    },
+    {
+      "code": "BK2_02.09.01",
+      "rol": "kern"
+    },
+    {
+      "code": "BK2_02.09.02",
+      "rol": "kern"
+    },
+    {
+      "code": "BK2_02.09.03",
+      "rol": "kern"
+    },
+    {
+      "code": "BV2_04.03",
+      "rol": "ondersteunend"
+    },
+    {
+      "code": "BK2_02.06.02",
+      "rol": "ondersteunend"
+    },
+    {
+      "code": "BK2_01.02",
+      "rol": "ondersteunend"
+    }
+  ]
+}

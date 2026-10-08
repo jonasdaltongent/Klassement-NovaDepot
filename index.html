@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les 07 · Het digitale klassement · NovaDepot</title>
+  <link rel="icon" href="assets/novadepot-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-storage="novadepot_klassement_v1_" data-laatste-stap="6">
+
+<!-- Pictogrammen: eenvoudige lijntekeningen, eigen werk. Gebruik: een svg met class "ic" en daarin use met href naar het symbool. -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h12l-2.5 4 2.5 4H5"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2z"/><path d="M22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 10"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4.5 6h.01M4.5 12h.01M4.5 18h.01" stroke-width="3"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5l9.5 17h-19z"/><path d="M12 10v4.5M12 17.5h.01"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 1 1 3.4 2.5c-.6.3-1 .8-1 1.5v.4M12 17h.01"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2h8.5A1.5 1.5 0 0 1 21 8.5v10a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M4 14v6h16v-6"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9l-5.2 2.8 1-5.9-4.3-4.1 5.9-.8z"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/></symbol>
+  <symbol id="i-hash" viewBox="0 0 24 24"><path d="M9.5 4L7.5 20M16.5 4l-2 16M4 9h16M3.5 15h16"/></symbol>
+  <symbol id="i-sort" viewBox="0 0 24 24"><path d="M4 7h9M4 12h6M4 17h3"/><path d="M17 5v14M14 16l3 3 3-3"/></symbol>
+</svg>
+
+<div class="teacher-banner">Leraarweergave: de roze kaders tonen waar je een screenshot kan plaatsen. Leerlingen zien die kaders niet.</div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html" title="Naar het begin van de les">
+      <img src="assets/novadepot-logo.svg" alt="NovaDepot">
+      <span class="brand-lesson">Les 07 · Het digitale klassement</span>
+    </a>
+    <span class="topbar-spacer"></span>
+    <img class="dalton-mark" src="assets/dalton-gent-logo.png" alt="GO! Dalton Gent">
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ============ LINKS: de route ============ -->
+  <nav class="route" aria-label="Stappenplan">
+    <p class="route-title">Stappenplan</p>
+    <button class="nav-btn" type="button" data-step="start"><span class="nav-num"><svg class="ic" aria-hidden="true"><use href="#i-flag"/></svg></span><span class="nav-lbl">Start</span></button>
+    <button class="nav-btn" type="button" data-step="theorie"><span class="nav-num"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg></span><span class="nav-lbl">Theoriekaart</span></button>
+
+    <p class="route-group">Je map aanvullen</p>
+    <button class="nav-btn" type="button" data-step="1"><span class="nav-num"><span class="nav-n">1</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Klaarzetten</span></button>
+    <button class="nav-btn" type="button" data-step="2"><span class="nav-num"><span class="nav-n">2</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Nieuwe documenten</span></button>
+    <button class="nav-btn" type="button" data-step="3"><span class="nav-num"><span class="nav-n">3</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Op de juiste plaats</span></button>
+
+    <p class="route-group">Je klassement</p>
+    <button class="nav-btn" type="button" data-step="4"><span class="nav-num"><span class="nav-n">4</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Op datum</span></button>
+    <button class="nav-btn" type="button" data-step="5"><span class="nav-num"><span class="nav-n">5</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Op nummer</span></button>
+    <button class="nav-btn" type="button" data-step="6"><span class="nav-num"><span class="nav-n">6</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Controleren en inleveren</span></button>
+    <button class="nav-btn extra" type="button" data-step="extra"><span class="nav-num"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span><span class="nav-lbl">Extra</span></button>
+  </nav>
+
+  <!-- ============ MIDDEN: één stap tegelijk ============ -->
+  <main id="main">
+
+    <!-- ===== START ===== -->
+    <section class="pane" id="pane-start" aria-labelledby="h-start">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-where">Toegepaste Informatica · les 07</span></div>
+          <h1 id="h-start">Het digitale klassement</h1>
+        </header>
+        <div class="card-body">
+          <p class="intro">NovaDepot heeft twee nieuwe leveranciers: Fruitgroothandel Appelbloesem en Zuivelhoeve De Melkkan. Van elk kwamen een leveringsbon, een factuur en een prijslijst. Jij zet ze in je map NovaDepot, in de juiste volgorde.</p>
+
+          <h2 class="sec">Zo werk je</h2>
+          <div class="werkwijze">
+            <div class="werk-tegel"><svg class="ic" aria-hidden="true"><use href="#i-monitor"/></svg><strong>Lees hier</strong><span>Op deze pagina staat wat je moet doen, stap voor stap.</span></div>
+            <div class="werk-tegel"><svg class="ic" aria-hidden="true"><use href="#i-folder"/></svg><strong>Werk in Drive</strong><span>In je map NovaDepot maak je je klassement.</span></div>
+            <div class="werk-tegel inleveren"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg><strong>Schrijf in je werkdocument</strong><span>Dat lever je in. Niets anders.</span></div>
+          </div>
+
+          <h2 class="sec">Na deze les kan je</h2>
+          <ul class="doelen">
+            <li>documenten ordenen op datum, op nummer en op naam;</li>
+            <li>de datum of het nummer vooraan in een naam zetten;</li>
+            <li>uitleggen waarom een bedrijf zijn documenten klasseert.</li>
+          </ul>
+
+          <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Vast?</strong> Kijk eerst op de theoriekaart. Open dan <em>Hulp nodig?</em> onder de stap. Vraag het daarna aan je buur, en pas dan aan je leraar.</p></div>
+
+          <p class="start-cta"><button class="btn btn-primary" type="button" data-goto="1">Start met stap 1 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button></p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== THEORIEKAART ===== -->
+    <section class="pane" id="pane-theorie" aria-labelledby="h-theorie">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-where">Spiekbriefje</span></div>
+          <h2 id="h-theorie">Theoriekaart</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Alles op één plek. Kom hier terug als je iets niet meer weet.</p>
+
+          <div class="t-grid">
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg>Zo werkt elke les</h3>
+              <ul>
+                <li>Je start in Classroom, bij de opdracht van vandaag.</li>
+                <li>In de opdracht staan de lespagina en je werkdocument.</li>
+                <li>Klaar? Klik in de opdracht op <span class="ui">Inleveren</span>.</li>
+              </ul>
+            </section>
+
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-folder"/></svg>Waarom klasseren?</h3>
+              <ul>
+                <li>Je vindt een document snel terug. Een collega ook.</li>
+                <li>Je ziet meteen wat er al is en wat ontbreekt.</li>
+                <li>Een bedrijf moet zijn facturen jarenlang bewaren.</li>
+              </ul>
+            </section>
+
+            <section class="t-card wide">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-sort"/></svg>Drie manieren om te ordenen</h3>
+              <table class="t-rows">
+                <tr><th>op datum</th><td><strong>chronologisch</strong>: van oud naar nieuw. Voor <strong>leveringsbonnen</strong>.</td></tr>
+                <tr><th>op nummer</th><td><strong>numeriek</strong>: van klein naar groot. Voor <strong>facturen</strong>.</td></tr>
+                <tr><th>op naam</th><td><strong>alfabetisch</strong>: van A tot Z. Voor <strong>prijslijsten</strong>, op de naam van de leverancier.</td></tr>
+              </table>
+            </section>
+
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-hash"/></svg>De sleutel vooraan</h3>
+              <p>Drive zet de bestanden in de volgorde van hun naam. Wat vooraan staat, bepaalt de volgorde.</p>
+              <ul>
+                <li><code>2026-10-13 Leveringsbon - Bakkerij Korstjes</code></li>
+                <li><code>2026-0417 Factuur - Papierhandel Vellekens</code></li>
+              </ul>
+            </section>
+
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg>Een datum schrijven</h3>
+              <p>Schrijf <strong>jaar-maand-dag</strong>: <code>2026-09-28</code>.</p>
+              <ul>
+                <li>Op de bon staat <code>28-09-2026</code>. Draai de drie stukken om.</li>
+                <li>Zo staat de oudste bon bovenaan.</li>
+              </ul>
+            </section>
+
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-pen"/></svg>Iets vooraan typen</h3>
+              <ul>
+                <li>Rechtermuisknop op het bestand › <span class="ui">Naam wijzigen</span>.</li>
+                <li>Druk op <span class="key">Home</span>: de cursor staat vooraan.</li>
+                <li>Typ de sleutel en een spatie. Klik op <span class="ui">OK</span>.</li>
+              </ul>
+            </section>
+
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-folder"/></svg>Verplaatsen en sorteren</h3>
+              <ul>
+                <li>Rechtermuisknop › <span class="ui">Ordenen</span> › <span class="ui">Verplaatsen</span>.</li>
+                <li>Volgorde: rechts boven de lijst <span class="ui">Sorteren</span> › <span class="ui">Naam</span> en <span class="ui">A tot Z</span>.</li>
+              </ul>
+            </section>
+
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Van de opdracht naar Drive</h3>
+              <ul>
+                <li><strong>Downloaden</strong>: klik in de opdracht op het zip-bestand › <span class="ui">Openen met</span> › <span class="ui">Openen in nieuw tabblad</span> › de pijl linksboven.</li>
+                <li><strong>Uitpakken</strong>: <span class="key">Windows</span> + <span class="key">E</span> › <span class="ui">Downloads</span> › rechtermuisknop › <span class="ui">Alles uitpakken…</span></li>
+                <li><strong>Uploaden</strong>: in Drive <span class="ui">Nieuw</span> › <span class="ui">Bestand uploaden</span>.</li>
+              </ul>
+            </section>
+
+            <section class="t-card wide">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Woorden</h3>
+              <table class="t-rows">
+                <tr><th>klassement</th><td>een vaste manier om documenten te ordenen en te bewaren</td></tr>
+                <tr><th>klasseren</th><td>een document op de juiste plaats in een klassement zetten</td></tr>
+                <tr><th>chronologisch</th><td>op datum, van oud naar nieuw</td></tr>
+                <tr><th>numeriek</th><td>op nummer, van klein naar groot</td></tr>
+                <tr><th>alfabetisch</th><td>op naam, van A tot Z</td></tr>
+                <tr><th>sorteren</th><td>een lijst in een volgorde zetten</td></tr>
+              </table>
+            </section>
+
+            <section class="t-card wide warn">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg>Veelgemaakte fouten</h3>
+              <ul>
+                <li>De datum overgetypt zoals op de bon (<code>28-09-2026</code>), niet als jaar-maand-dag.</li>
+                <li>Bij een factuur de datum gebruikt in plaats van het factuurnummer.</li>
+                <li>Bij <span class="ui">Naam wijzigen</span> meteen getypt, zonder <span class="key">Home</span>: dan is de hele naam weg.</li>
+                <li>De lijst staat op <em>Z tot A</em>: dan staat de nieuwste bovenaan.</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== STAP 1 ===== -->
+    <section class="pane" id="pane-1" aria-labelledby="h-1">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 1</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg> Werkdocument</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-folder"/></svg> Drive</span></div>
+          <h2 id="h-1">Klaarzetten</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Je zet je werkdocument en Google Drive klaar. Daarna kijk je of je map NovaDepot uit les 06 klopt.</p>
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3>
+            <ol class="todo">
+              <li>Open je werkdocument <strong>WP2_Het-digitale-klassement</strong>. Het staat in je opdracht in <strong>Google Classroom</strong>, net als deze pagina.</li>
+              <li>Vul bovenaan je <strong>naam</strong>, je <strong>klas</strong> en de <strong>datum</strong> in.</li>
+              <li>Open <a href="https://drive.google.com" target="_blank" rel="noopener">drive.google.com</a> in een nieuw tabblad.</li>
+              <li>Klik links op <span class="ui">Mijn Drive</span> en open je map <strong>NovaDepot</strong>. Zie je drie mappen? Dan klopt alles.</li>
+            </ol>
+            <div class="tree">
+              <ul>
+                <li class="fold"><strong>NovaDepot</strong>
+                  <ul>
+                    <li class="fold">Facturen <span class="hint-txt">· Factuur - Papierhandel Vellekens</span></li>
+                    <li class="fold">Leveringen <span class="hint-txt">· Leveringsbon - Bakkerij Korstjes, Foto - Speelgoed Tolletje</span></li>
+                    <li class="fold">Prijslijsten <span class="hint-txt">· Prijslijst - Koffiebranderij De Bonenbaas</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Les 06 gemist, of klopt je map niet?</strong> Open <em>Hulp nodig?</em> hieronder. Daar haal je in twee minuten een kant-en-klare map.</p></div>
+          <details class="help"><summary><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg> Hulp nodig? Les 06 gemist</summary>
+            <div class="help-body">
+              <p>Heb je geen map NovaDepot, of ontbreken er mappen? Haal dan de kant-en-klare map. Ze zit in je opdracht, als <strong>NovaDepot.zip</strong>.</p>
+              <ol class="todo">
+                <li>Klik in je opdracht op <strong>NovaDepot.zip</strong> › <span class="ui">Openen met</span> › <span class="ui">Openen in nieuw tabblad</span>. Klik daar linksboven op de pijl naar beneden (<span class="ui">Downloaden</span>).</li>
+                <li>Open de <strong>Verkenner</strong> met <span class="key">Windows</span> + <span class="key">E</span> en klik links op <span class="ui">Downloads</span>.</li>
+                <li>Klik met de rechtermuisknop op <strong>NovaDepot.zip</strong> › <span class="ui">Alles uitpakken…</span> Bevestig in het venster dat opengaat.</li>
+                <li>Klik in Drive links op <span class="ui">Mijn Drive</span>. Klik op <span class="ui">Nieuw</span> › <span class="ui">Map uploaden</span>.</li>
+                <li>Kies de <strong>map</strong> <code>NovaDepot</code> (niet het zip-bestand) en bevestig. Vraagt Chrome of je wil uploaden? Bevestig dat ook.</li>
+              </ol>
+              <figure class="shot" data-shot="stap1-map-uploaden.png" data-caption="Klik in Drive op Nieuw. Kies dan Map uploaden." data-alt="Het menu Nieuw in Google Drive. Map uploaden heeft een rood kader."></figure>
+              <p>Heb je al een map NovaDepot die niet klopt? Geef ze eerst een andere naam: rechtermuisknop › <span class="ui">Naam wijzigen</span> › <code>NovaDepot oud</code>.</p>
+            </div>
+          </details>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> je werkdocument open is met je naam erin, en je in Drive je map NovaDepot ziet, met drie mappen.</span></p>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="start"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Start</button>
+          <button class="btn btn-primary" type="button" data-goto="2">Stap 2 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 2 ===== -->
+    <section class="pane" id="pane-2" aria-labelledby="h-2">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 2</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-monitor"/></svg> Verkenner</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-folder"/></svg> Drive</span></div>
+          <h2 id="h-2">Nieuwe documenten</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">De zes nieuwe documenten zitten samen in één zip-bestand, in je opdracht in <strong>Google Classroom</strong>. Je zet ze in je map NovaDepot, zoals in les 06.</p>
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3>
+            <ol class="todo">
+              <li>Klik in je opdracht op <strong>Nieuwe-documenten.zip</strong> › <span class="ui">Openen met</span> › <span class="ui">Openen in nieuw tabblad</span>. Klik daar linksboven op de pijl naar beneden (<span class="ui">Downloaden</span>).</li>
+              <li>Open de <strong>Verkenner</strong> met <span class="key">Windows</span> + <span class="key">E</span> en klik links op <span class="ui">Downloads</span>.</li>
+              <li>Klik met de rechtermuisknop op het zip-bestand › <span class="ui">Alles uitpakken…</span> Bevestig in het venster dat opengaat.<span class="sub">Er komt een nieuwe map <code>Nieuwe-documenten</code>.</span></li>
+              <li>Open in Drive je map <strong>NovaDepot</strong>. Klik op <span class="ui">Nieuw</span> › <span class="ui">Bestand uploaden</span>.</li>
+              <li>Open in het venster de map <code>Nieuwe-documenten</code>. Klik op één bestand en druk op <span class="key">Ctrl</span> + <span class="key">A</span>: alle zes worden blauw. Druk op <span class="key">Enter</span>.<span class="sub">Kies <strong>niet</strong> het zip-bestand.</span></li>
+            </ol>
+            <figure class="shot" data-shot="stap2-bestand-uploaden.png" data-caption="In Drive: Nieuw › Bestand uploaden." data-alt="Het menu Nieuw in Google Drive. Bestand uploaden heeft een rood kader."></figure>
+          </div>
+          <div class="tip warn"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><p><strong>Downloads staat op deze computer, niet in je Drive.</strong> Thuis heb je die bestanden niet. Daarom zet je ze in Drive.</p></div>
+          <details class="help"><summary><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg> Hulp nodig?</summary>
+            <div class="help-body">
+              <p><strong>Vind je het zip-bestand niet?</strong> Het staat in je opdracht in <strong>Google Classroom</strong>: <em>Werkplek 2 — Het digitale klassement</em>. Dit filmpje toont hoe je een bestand uit de opdracht downloadt. Het is een ander zip-bestand, de klikken zijn dezelfde.</p>
+              <figure class="help-video">
+                <video src="assets/video/zip-downloaden.mp4" poster="assets/video/zip-downloaden.jpg" controls muted playsinline preload="none"></video>
+                <figcaption>Klik op het zip-bestand › <span class="ui">Openen met</span> › <span class="ui">Openen in nieuw tabblad</span> › de pijl linksboven (<span class="ui">Downloaden</span>).</figcaption>
+              </figure>
+              <p>Zie je in Downloads alleen het zip-bestand? Dan is het uitpakken niet gelukt. Probeer het nog eens.</p>
+              <p>Staat er een zip-bestand in je map NovaDepot? Dan koos je het zip-bestand. Upload nog de zes bestanden uit de map <code>Nieuwe-documenten</code>.</p>
+            </div>
+          </details>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> in je map NovaDepot zes nieuwe losse bestanden staan, onder je drie mappen.</span></p>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="1"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 1</button>
+          <button class="btn btn-primary" type="button" data-goto="3">Stap 3 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 3 ===== -->
+    <section class="pane" id="pane-3" aria-labelledby="h-3">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 3</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-folder"/></svg> Drive</span></div>
+          <h2 id="h-3">Op de juiste plaats</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Elk bestand gaat naar zijn map. Het eerste woord van de naam zegt welke map.</p>
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3>
+            <ol class="todo">
+              <li>Klik met de rechtermuisknop op een bestand › <span class="ui">Ordenen</span> › <span class="ui">Verplaatsen</span>.</li>
+              <li>Klik naast <em>Huidige locatie</em> op <strong>NovaDepot</strong>. Nu zie je je drie mappen.<span class="sub">Bovenaan staat eerst <em>Voorgesteld</em>, met andere mappen. Die heb je niet nodig.</span></li>
+              <li>Kies de juiste map en klik op <span class="ui">Verplaatsen</span>.</li>
+              <li>Doe dat voor alle zes de bestanden. Kijk in de tabel hieronder.</li>
+            </ol>
+            <table class="mini">
+              <tr><th>De naam begint met</th><th>Map</th></tr>
+              <tr><td>Leveringsbon</td><td>Leveringen</td></tr>
+              <tr><td>Factuur</td><td>Facturen</td></tr>
+              <tr><td>Prijslijst</td><td>Prijslijsten</td></tr>
+            </table>
+            <figure class="clip">
+              <video src="assets/video/stap3-verplaatsen.mp4" poster="assets/video/stap3-verplaatsen.jpg" autoplay loop muted playsinline controls preload="metadata" aria-label="Filmpje: rechtermuisknop op de bon, Ordenen, Verplaatsen, naast Huidige locatie op NovaDepot, de map Leveringen, Verplaatsen."></video>
+              <figcaption>Filmpje van 13 seconden. De nummers horen bij de stappen hierboven.</figcaption>
+            </figure>
+          </div>
+          <details class="help"><summary><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg> Hulp nodig?</summary>
+            <div class="help-body">
+              <p>Slepen mag ook: klik op het bestand, houd de muisknop ingedrukt en sleep het op de map.</p>
+              <p>Een bestand in de verkeerde map? Open die map en verplaats het opnieuw.</p>
+              <p>Bovenaan staat <em>Mijn Drive › NovaDepot › …</em>. Klik op <em>NovaDepot</em> om terug te gaan.</p>
+            </div>
+          </details>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> er in NovaDepot geen losse bestanden meer staan, alleen je drie mappen.</span></p>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="2"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 2</button>
+          <button class="btn btn-primary" type="button" data-goto="4">Stap 4 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 4 ===== -->
+    <section class="pane" id="pane-4" aria-labelledby="h-4">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 4</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-folder"/></svg> Drive</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg> Werkdocument, deel 1</span></div>
+          <h2 id="h-4">Op datum: de leveringsbonnen</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Leveringsbonnen klasseer je op datum: de oudste bovenaan. Daarom zet je de datum <strong>vooraan</strong> in de naam.</p>
+
+          <div class="nameplate">
+            <div class="nameplate-head">Zo heet een leveringsbon in het klassement</div>
+            <div class="nameplate-body">
+              <code class="fname"><span class="d">2026-10-13</span> <span class="o">Leveringsbon - Bakkerij Korstjes</span>.docx</code>
+              <ul class="legend-name">
+                <li class="d"><strong>De datum</strong>, als jaar-maand-dag.</li>
+                <li class="o"><strong>De naam van les 06</strong>: die blijft gewoon staan.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3>
+            <ol class="todo">
+              <li>Open de map <strong>Leveringen</strong>. Je ziet drie bonnen en de foto.</li>
+              <li>Dubbelklik op een bon. Lees bovenaan de <strong>datum</strong> bij <em>Levering</em>. Sluit de bon.<span class="sub">Op de bon staat <code>28-09-2026</code>. Jij schrijft <code>2026-09-28</code>: jaar, maand, dag.</span></li>
+              <li>Klik met de rechtermuisknop op de bon › <span class="ui">Naam wijzigen</span>.</li>
+              <li>Druk op <span class="key">Home</span>. Typ de datum en een spatie. Klik op <span class="ui">OK</span>.<span class="sub">De hele naam staat eerst in het blauw. Met <span class="key">Home</span> springt de cursor vooraan, en de rest van de naam blijft staan.</span></li>
+              <li>Doe dat voor de drie bonnen. Staat de oudste bon nu bovenaan?</li>
+              <li>Schrijf de nieuwe namen in <strong>deel 1</strong> van je werkdocument.</li>
+            </ol>
+            <figure class="clip">
+              <video src="assets/video/stap4-datum-vooraan.mp4" poster="assets/video/stap4-datum-vooraan.jpg" autoplay loop muted playsinline controls preload="metadata" aria-label="Filmpje: rechtermuisknop op de bon, Naam wijzigen, Home, de datum 2026-10-13 typen, OK. De bon staat nu bovenaan."></video>
+              <figcaption>Filmpje van 13 seconden. De nummers horen bij de stappen hierboven.</figcaption>
+            </figure>
+            <figure class="shot" data-shot="stap4-leveringen-klaar.png" data-caption="Zo ziet je map Leveringen er daarna uit: de oudste bon bovenaan, de foto onderaan." data-alt="De map Leveringen in Google Drive met drie bonnen die met een datum beginnen, van 2026-09-28 tot 2026-10-13, en onderaan de foto."></figure>
+          </div>
+          <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Kijk eerst naar het voorbeeld</strong> in rij 1 van je werkdocument: <code>2026-10-13 Leveringsbon - Bakkerij Korstjes</code>. Geef die bon ook die naam.</p></div>
+          <details class="help"><summary><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg> Hulp nodig?</summary>
+            <div class="help-body">
+              <p><strong>Staat de nieuwste bon bovenaan?</strong> Dan staat de lijst in de omgekeerde volgorde. Klik rechts boven de lijst op <span class="ui">Sorteren</span>. Kies <span class="ui">Naam</span>, en daarna <span class="ui">A tot Z</span>.</p>
+              <figure class="shot" data-shot="stap4-sorteren.png" data-caption="1 Sorteren · 2 Naam · 3 A tot Z" data-alt="Het menu Sorteren in Google Drive, met rode kaders en de nummers 1 bij Sorteren, 2 bij Naam en 3 bij A tot Z."></figure>
+              <p>Vind je de toets <span class="key">Home</span> niet? Druk dan op <span class="key">←</span> (de pijl naar links) tot de cursor helemaal vooraan staat.</p>
+              <p>Typte je zonder <span class="key">Home</span> en is de naam weg? Klik op <span class="ui">Annuleren</span> en begin opnieuw. Klikte je al op <span class="ui">OK</span>? Typ dan de hele naam: datum, spatie, <code>Leveringsbon - </code>, de naam van het bedrijf en <code>.docx</code>.</p>
+              <p>De foto heeft geen datum in haar naam. Die laat je zo. Wil je ze toch doen? Kijk bij <strong>Extra</strong>.</p>
+            </div>
+          </details>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> in Leveringen de drie bonnen met de datum beginnen, de oudste bovenaan.</span></p>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="3"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 3</button>
+          <button class="btn btn-primary" type="button" data-goto="5">Stap 5 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 5 ===== -->
+    <section class="pane" id="pane-5" aria-labelledby="h-5">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 5</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-folder"/></svg> Drive</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg> Werkdocument, deel 2</span></div>
+          <h2 id="h-5">Op nummer: de facturen</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Facturen klasseer je op nummer: het kleinste bovenaan. Je werkt zoals in stap 4, maar met het factuurnummer.</p>
+
+          <div class="nameplate">
+            <div class="nameplate-head">Zo heet een factuur in het klassement</div>
+            <div class="nameplate-body">
+              <code class="fname"><span class="d">2026-0417</span> <span class="o">Factuur - Papierhandel Vellekens</span>.docx</code>
+              <ul class="legend-name">
+                <li class="d"><strong>Het factuurnummer</strong>. Het staat bovenaan de factuur.</li>
+                <li class="o"><strong>De naam van les 06</strong>: die blijft gewoon staan.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3>
+            <ol class="todo">
+              <li>Open de map <strong>Facturen</strong>. Dubbelklik op een factuur. Lees het <strong>factuurnummer</strong>. Sluit de factuur.</li>
+              <li>Klik met de rechtermuisknop op de factuur › <span class="ui">Naam wijzigen</span>.</li>
+              <li>Druk op <span class="key">Home</span>. Typ het nummer en een spatie. Klik op <span class="ui">OK</span>.</li>
+              <li>Doe dat voor de drie facturen. Staat het kleinste nummer bovenaan?</li>
+              <li>Schrijf de nieuwe namen in <strong>deel 2</strong> van je werkdocument.</li>
+            </ol>
+            <figure class="shot" data-shot="stap5-facturen-klaar.png" data-caption="Zo ziet je map Facturen er daarna uit: het kleinste nummer bovenaan." data-alt="De map Facturen in Google Drive met drie facturen die met een nummer beginnen, van 2026-0398 tot 2026-0417."></figure>
+          </div>
+          <div class="tip warn"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><p><strong>Let op:</strong> op een factuur staat ook een datum. Die gebruik je nu niet. Je kiest het <strong>factuurnummer</strong>.</p></div>
+          <details class="help"><summary><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg> Hulp nodig?</summary>
+            <div class="help-body">
+              <p>Het nummer staat bovenaan, op de regel <em>Factuurnummer</em>. Het begint met <code>2026-</code>.</p>
+              <p>Hoe je iets vooraan typt, zie je in het filmpje van stap 4.</p>
+            </div>
+          </details>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> in Facturen de drie facturen met het nummer beginnen, het kleinste bovenaan.</span></p>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="4"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 4</button>
+          <button class="btn btn-primary" type="button" data-goto="6">Stap 6 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 6 ===== -->
+    <section class="pane" id="pane-6" aria-labelledby="h-6">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 6</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-send"/></svg> Opdracht</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg> Werkdocument, deel 3</span></div>
+          <h2 id="h-6">Controleren en inleveren</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Kijk nog één keer in je mappen. Test dan of je het onthouden hebt. Er wordt niets bewaard.</p>
+
+          <div class="quiz">
+            <div class="quiz-q" data-ok="Juist: jaar-maand-dag, vooraan. Dan staat de oudste bon bovenaan." data-nok="Nog niet. Kijk naar het voorbeeld in rij 1 van deel 1.">
+              <p>1. Welke naam past in het klassement van de leveringsbonnen?</p>
+              <div class="opts">
+                <button type="button">13-10-2026 Leveringsbon - Bakkerij Korstjes.docx</button>
+                <button type="button" data-right>2026-10-13 Leveringsbon - Bakkerij Korstjes.docx</button>
+                <button type="button">Leveringsbon - Bakkerij Korstjes 13 oktober.docx</button>
+              </div>
+              <p class="feedback" role="status"></p>
+            </div>
+            <div class="quiz-q" data-ok="Juist. Alle namen beginnen met Prijslijst -, dus de naam van de leverancier bepaalt de volgorde." data-nok="Nog niet. Kijk naar de namen in de map Prijslijsten: hoe beginnen ze?">
+              <p>2. Waarom staan je prijslijsten vanzelf van A tot Z?</p>
+              <div class="opts">
+                <button type="button">Omdat Drive ze op datum zet</button>
+                <button type="button" data-right>Omdat ze allemaal met Prijslijst - beginnen, en dan de naam van de leverancier</button>
+                <button type="button">Omdat ik ze één voor één verplaatst heb</button>
+              </div>
+              <p class="feedback" role="status"></p>
+            </div>
+            <div class="quiz-q" data-ok="Juist. Drive leest van links naar rechts: 0 komt vóór 2. Maar 28 september is ouder! Daarom schrijf je jaar-maand-dag." data-nok="Nog niet. Drive leest de naam van links naar rechts, teken per teken.">
+              <p>3. Drive zet deze twee namen van A tot Z. Welke staat bovenaan?</p>
+              <div class="opts">
+                <button type="button" data-right>02-10-2026 Leveringsbon - Zuivelhoeve De Melkkan.docx</button>
+                <button type="button">28-09-2026 Leveringsbon - Fruitgroothandel Appelbloesem.docx</button>
+              </div>
+              <p class="feedback" role="status"></p>
+            </div>
+          </div>
+
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3>
+            <ol class="todo">
+              <li>Open de map <strong>Prijslijsten</strong>. Staan de leveranciers van A tot Z? Je moest er niets voor doen: dat is een <strong>alfabetisch</strong> klassement.</li>
+              <li>Loop de <strong>checklist</strong> na. Staat er nog iets open? Werk het eerst af.</li>
+              <li>Beantwoord de drie vragen van <strong>deel 3</strong> in je werkdocument.</li>
+              <li>Klik in je opdracht op <span class="ui">Inleveren</span>.</li>
+            </ol>
+            <figure class="shot" data-shot="stap6-prijslijsten.png" data-caption="Je map Prijslijsten: vanzelf van A tot Z, op de naam van de leverancier." data-alt="De map Prijslijsten in Google Drive met drie prijslijsten: Fruitgroothandel Appelbloesem, Koffiebranderij De Bonenbaas en Zuivelhoeve De Melkkan."></figure>
+          </div>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> er bij de opdracht <em>Ingeleverd</em> staat.</span></p>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="5"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 5</button>
+          <button class="btn btn-primary" type="button" data-goto="extra">Extra <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </footer>
+      </article>
+    </section>
+
+    <!-- ===== EXTRA ===== -->
+    <section class="pane" id="pane-extra" aria-labelledby="h-extra">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-extra">Extra · niet verplicht</span></div>
+          <h2 id="h-extra">Voor wie klaar is</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Begin hier pas nadat je hebt ingeleverd.</p>
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat kan je doen?</h3>
+            <ol class="todo">
+              <li><strong>De foto.</strong> In Leveringen staat de foto van Speelgoed Tolletje. Dubbelklik erop: welke datum staat op het etiket? Zet die datum vooraan in de naam van de foto.</li>
+              <li><strong>Een nieuwe bon.</strong> Op 08-10-2026 leverde Sapfabriek Fris. Hoe zou die bon heten? Tussen welke twee bonnen komt hij te staan? Schrijf het op bij <strong>Extra</strong> in je werkdocument.</li>
+            </ol>
+          </div>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="6"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 6</button>
+          <button class="btn" type="button" data-goto="start">Naar het begin</button>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <!-- ============ RECHTS: de checklist ============ -->
+  <aside class="checklist leeg" id="checklist" aria-labelledby="h-cl">
+    <div class="cl-head">
+      <h2 id="h-cl">Checklist</h2>
+      <div class="cl-bar" role="progressbar" aria-label="Voortgang" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="cl-fill" id="clFill"></div></div>
+      <p class="cl-count" id="clCount">0 van 0 klaar</p>
+    </div>
+    <div class="cl-body">
+      <div class="cl-group" data-step="1"><h3>1 · Klaarzetten</h3>
+        <label class="cl-item"><input type="checkbox" id="c1a"><span>Werkdocument open, met mijn naam in de titel</span></label>
+        <label class="cl-item"><input type="checkbox" id="c1b"><span>Naam, klas en datum ingevuld</span></label>
+        <label class="cl-item"><input type="checkbox" id="c1c"><span>Map NovaDepot met drie mappen</span></label>
+      </div>
+      <div class="cl-group" data-step="2"><h3>2 · Nieuwe documenten</h3>
+        <label class="cl-item"><input type="checkbox" id="c2a"><span>Zip-bestand gedownload</span></label>
+        <label class="cl-item"><input type="checkbox" id="c2b"><span>Uitgepakt in Downloads</span></label>
+        <label class="cl-item"><input type="checkbox" id="c2c"><span>Zes bestanden in NovaDepot</span></label>
+      </div>
+      <div class="cl-group" data-step="3"><h3>3 · Op de juiste plaats</h3>
+        <label class="cl-item"><input type="checkbox" id="c3a"><span>Twee bonnen in Leveringen</span></label>
+        <label class="cl-item"><input type="checkbox" id="c3b"><span>Twee facturen in Facturen</span></label>
+        <label class="cl-item"><input type="checkbox" id="c3c"><span>Twee prijslijsten in Prijslijsten</span></label>
+      </div>
+      <div class="cl-group" data-step="4"><h3>4 · Op datum</h3>
+        <label class="cl-item"><input type="checkbox" id="c4a"><span>Drie bonnen met de datum vooraan</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4b"><span>Oudste bon bovenaan</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4c"><span>Nieuwe namen in deel 1</span></label>
+      </div>
+      <div class="cl-group" data-step="5"><h3>5 · Op nummer</h3>
+        <label class="cl-item"><input type="checkbox" id="c5a"><span>Drie facturen met het nummer vooraan</span></label>
+        <label class="cl-item"><input type="checkbox" id="c5b"><span>Nieuwe namen in deel 2</span></label>
+      </div>
+      <div class="cl-group" data-step="6"><h3>6 · Controleren en inleveren</h3>
+        <label class="cl-item"><input type="checkbox" id="c6a"><span>Prijslijsten van A tot Z bekeken</span></label>
+        <label class="cl-item"><input type="checkbox" id="c6b"><span>Zelftest gedaan</span></label>
+        <label class="cl-item"><input type="checkbox" id="c6c"><span>Deel 3 ingevuld</span></label>
+        <label class="cl-item"><input type="checkbox" id="c6d"><span>Werkdocument ingeleverd</span></label>
+      </div>
+    </div>
+    <div class="cl-foot">
+      <button class="btn cl-toggle" type="button" id="clToggle" aria-expanded="false">Toon alles</button>
+      <button class="btn" type="button" id="btnReset">Vinkjes wissen</button>
+      <p class="cl-note">Je vinkjes staan alleen op deze computer. Er wordt niets doorgestuurd.</p>
+    </div>
+  </aside>
+</div>
+
+<!-- ============ Klaar! ============ -->
+<div class="klaar-overlay" id="klaar" role="dialog" aria-modal="true" aria-labelledby="h-klaar" hidden>
+  <div class="klaar-card">
+    <svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg>
+    <h2 id="h-klaar">Je klassement staat!</h2>
+    <p>Alles is afgevinkt. Heb je nog tijd? Kijk dan bij <strong>Extra</strong>.</p>
+    <p>Volgende les leer je <strong>delen met de juiste rechten</strong>: wie mag jouw documenten bekijken, en wie mag ze veranderen?</p>
+    <button class="btn btn-primary" type="button" id="klaarSluit">Sluiten</button>
+  </div>
+</div>
+
+<footer class="site">
+  Toegepaste Informatica · GO! Dalton Gent · 2de graad Organisatie en logistiek · NovaDepot is een fictief bedrijf. Alle namen zijn verzonnen.
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

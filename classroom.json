@@ -1,0 +1,35 @@
+{
+  "_uitleg": "Wordt gelezen door _tools/zet_opdracht_klaar.py (zie _tools/CLASSROOM-KOPPELING.md). Dit bestand staat openbaar op GitHub: zet hier nooit een e-mailadres of wachtwoord in. {deadline} vult het script zelf in; de deadline komt uit lesdoelen.json.",
+  "titel": "Werkplek 2 — Het digitale klassement",
+  "onderwerp": "Digitale competenties",
+  "klassen": [
+    "3ORLO",
+    "4ORLOa",
+    "4ORLOb"
+  ],
+  "punten": 20,
+  "instructie": [
+    "1. Open de lespagina (link) en je werkdocument WP2_Het-digitale-klassement.",
+    "2. Nieuwe-documenten.zip heb je nodig in stap 2. NovaDepot.zip is alleen voor wie les 06 miste (stap 1).",
+    "3. Klik op Inleveren, ten laatste {deadline}."
+  ],
+  "bijlagen": [
+    {
+      "soort": "link",
+      "url": "https://jonasdaltongent.github.io/Klassement-NovaDepot/"
+    },
+    {
+      "soort": "kopie",
+      "bestand": "werkdocument/WP2_Het-digitale-klassement.docx",
+      "naam": "WP2_Het-digitale-klassement"
+    },
+    {
+      "soort": "bekijken",
+      "bestand": "werkdocument/Nieuwe-documenten.zip"
+    },
+    {
+      "soort": "bekijken",
+      "bestand": "werkdocument/NovaDepot.zip"
+    }
+  ]
+}

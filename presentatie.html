@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Het digitale klassement · dia's · NovaDepot</title>
+  <link rel="icon" href="assets/novadepot-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/slides.css">
+  <style>
+    .mono { font-family: "Courier New", monospace; font-size: 25px; font-weight: 700; }
+    .qhead { font-size: 30px; font-weight: 700; margin: 0 0 6px; }
+    .qcol .opt { font-size: 26px; padding: 8px 16px; }
+    .qcol .opt .n { width: 46px; height: 46px; font-size: 24px; }
+    .steps2 { columns: 2; column-gap: 40px; margin: 0; }
+    .steps2 li { font-size: 25px; margin-bottom: 6px; break-inside: avoid; }
+    .klok { font-size: 22px; color: #4D5573; }
+    .compact .two { flex: 0 0 auto; }
+    .compact .panel p { margin-bottom: 10px; }
+    .compact .panel p:last-child { margin-bottom: 0; }
+    .steps1 { margin: 0; padding-left: 1.2em; }
+    .steps1 li { font-size: 27px; margin-bottom: 14px; }
+    .steps1 li:last-child { margin-bottom: 0; }
+    .lbl { font-weight: 700; font-size: 22px !important; margin: 0 0 10px; color: var(--navy-deep); }
+    /* Een mappenboom (dia 2) */
+    .boom { list-style: none; padding: 0 !important; margin: 0; }
+    .boom li { font-family: Arial, sans-serif; font-size: 24px !important; margin-bottom: 6px; }
+    .boom li.map::before { content: "📁 "; }
+    .boom li.sub { margin-left: 30px; }
+    /* Drie mappen, drie manieren (dia 4) */
+    .drie { display: grid; gap: 14px; }
+    .rij { display: grid; grid-template-columns: 230px 1fr; gap: 20px; align-items: center; background: #fff; border: 2px solid #D6D5CB; border-radius: 14px; padding: 12px 20px; }
+    .rij .wat b { display: block; font-family: "Montserrat", Arial, sans-serif; font-size: 25px; color: var(--navy-deep); }
+    .rij .wat span { display: block; font-size: 21px; color: var(--muted); }
+    .namen { list-style: none; padding: 0 !important; margin: 0; }
+    .namen li { font-family: Arial, sans-serif; font-size: 21px !important; line-height: 1.35 !important; margin: 0 0 2px !important; }
+    .sl { background: var(--blush); border-radius: 5px; padding: 0 5px; font-weight: 700; }
+    .sl.naam-lev { background: var(--peri-soft); }
+    /* Dag-maand-jaar tegenover jaar-maand-dag (dia 5) */
+    .stapel { display: grid; gap: 12px; }
+    .stapel .panel { padding: 12px 24px; }
+    .stapel .namen li { font-size: 23px !important; }
+    .stapel .bad-label, .stapel .good-label { font-size: 22px !important; margin: 0 0 4px; }
+    .vraag { font-size: 28px !important; font-weight: 700; margin: 0 0 12px; }
+    .oud { color: var(--warn); font-weight: 700; }
+    .fname { font-family: Arial, sans-serif; font-size: 34px; font-weight: 700; background: #fff; border: 3px solid var(--navy); border-radius: 14px; padding: 12px 22px; display: inline-block; margin: 0 0 18px; align-self: flex-start; }
+    .fname .ext { color: #4D5573; }
+  </style>
+</head>
+<body>
+<div class="hud"><span id="counter"></span> · <kbd>→</kbd> verder · <kbd>F</kbd> volledig scherm · <kbd>N</kbd> notities</div>
+<div class="deck"><div class="stage">
+
+<!-- 1 -->
+<section class="slide title">
+  <p class="kicker" style="color:var(--blush)">Toegepaste Informatica · les 07</p>
+  <h1>Het digitale<br>klassement</h1>
+  <p>Op datum, op nummer, op naam · NovaDepot</p>
+  <div class="logos"><img src="assets/novadepot-logo.svg" alt="NovaDepot"><img src="assets/dalton-gent-logo.png" alt="GO! Dalton Gent"></div>
+  <template class="note"><p><strong>Lesstart (0–1').</strong> Laat de computers opstarten en aanmelden terwijl deze dia op het bord staat. Ga verder zodra de meesten aangemeld zijn.</p></template>
+</section>
+
+<!-- 2 -->
+<section class="slide" data-answer>
+  <p class="kicker">Lesstart · 3 minuten</p>
+  <h2>Weet je het nog?</h2>
+  <div class="two" style="grid-template-columns: 320px 1fr">
+    <div class="panel">
+      <p class="lbl">Je map van les 06</p>
+      <ul class="boom">
+        <li class="map"><strong>NovaDepot</strong></li>
+        <li class="map sub">Facturen</li>
+        <li class="map sub">Leveringen</li>
+        <li class="map sub">Prijslijsten</li>
+      </ul>
+    </div>
+    <div class="qcol">
+      <p class="qhead">Tom zoekt de factuur van Papierhandel Vellekens. Waar zit ze, en hoe heet ze?</p>
+      <div class="opts">
+        <div class="opt"><span class="n">A</span>Leveringen › Factuur - Papierhandel Vellekens</div>
+        <div class="opt right"><span class="n">B</span>Facturen › Factuur - Papierhandel Vellekens</div>
+        <div class="opt"><span class="n">C</span>Facturen › factuur vellekens def (2)</div>
+      </div>
+    </div>
+  </div>
+  <p class="answer">In de map Facturen, met de naam Wat - Van wie. Vandaag zet je er nog iets vóór.</p>
+  <template class="note">
+    <p><strong>Lesstart (3'), ophalen uit les 06.</strong> Iedereen antwoordt tegelijk met vingers: 1, 2 of 3 vingers voor A, B of C. Druk daarna op → voor het antwoord.</p>
+    <p>Wie A kiest: <em>"De naam is goed, maar staat ze in de juiste map?"</em> Wie C kiest: <em>"Weet je van wie het is? En wat betekent def (2)?"</em></p>
+    <p>Begin met de naam die vorige les het vaakst misliep in deel 2 van de werkdocumenten, als die anders was.</p>
+    <p>Iemand heeft geen map NovaDepot, of er ontbreken mappen? Zeg: <em>"Stap 1 op de lespagina, Hulp nodig?: daar haal je de kant-en-klare map. Dat duurt twee minuten."</em></p>
+  </template>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+  <p class="kicker">Ik doe · dia 1 van 4</p>
+  <h2>Wat kan je straks?</h2>
+  <ul class="rules">
+    <li>Je zet zes <strong>nieuwe documenten</strong> in de juiste map.</li>
+    <li>Je zet de leveringsbonnen <strong>op datum</strong>: de oudste bovenaan.</li>
+    <li>Je zet de facturen <strong>op nummer</strong>: het kleinste bovenaan.</li>
+    <li>Je legt uit <strong>waarom</strong> een bedrijf zijn documenten klasseert.</li>
+  </ul>
+  <p class="klok" style="margin-top:6px">Ik leg 6 minuten uit. Daarna werk jij zelfstandig met de lespagina, en kom ik bij jou langs.</p>
+  <template class="note"><p><strong>Ik doe, 0'30".</strong> Lesdoel voorlezen, niet toelichten. Zeg er meteen bij dat de uitleg maar zes minuten duurt en dat alles daarna op de lespagina staat.</p></template>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+  <p class="kicker">Ik doe · dia 2 van 4</p>
+  <h2>Drie mappen, drie manieren</h2>
+  <div class="drie">
+    <div class="rij">
+      <div class="wat"><b>Leveringen</b><span>op datum · chronologisch</span></div>
+      <ul class="namen">
+        <li><span class="sl">2026-09-28</span> Leveringsbon - Fruitgroothandel Appelbloesem.docx</li>
+        <li><span class="sl">2026-10-02</span> Leveringsbon - Zuivelhoeve De Melkkan.docx</li>
+        <li><span class="sl">2026-10-13</span> Leveringsbon - Bakkerij Korstjes.docx</li>
+      </ul>
+    </div>
+    <div class="rij">
+      <div class="wat"><b>Facturen</b><span>op nummer · numeriek</span></div>
+      <ul class="namen">
+        <li><span class="sl">2026-0398</span> Factuur - Fruitgroothandel Appelbloesem.docx</li>
+        <li><span class="sl">2026-0409</span> Factuur - Zuivelhoeve De Melkkan.docx</li>
+        <li><span class="sl">2026-0417</span> Factuur - Papierhandel Vellekens.docx</li>
+      </ul>
+    </div>
+    <div class="rij">
+      <div class="wat"><b>Prijslijsten</b><span>op naam · alfabetisch</span></div>
+      <ul class="namen">
+        <li>Prijslijst - <span class="sl naam-lev">Fruitgroothandel Appelbloesem</span>.xlsx</li>
+        <li>Prijslijst - <span class="sl naam-lev">Koffiebranderij De Bonenbaas</span>.xlsx</li>
+        <li>Prijslijst - <span class="sl naam-lev">Zuivelhoeve De Melkkan</span>.xlsx</li>
+      </ul>
+    </div>
+  </div>
+  <p class="reveal-item" style="margin-top:16px;font-size:27px"><strong>Wat vooraan staat, bepaalt de volgorde.</strong></p>
+  <template class="note">
+    <p><strong>Ik doe, 1'30". Het eindproduct.</strong> Wijs per map aan wat er vooraan staat: een datum, een nummer, de naam van de leverancier. Druk op → voor de zin onderaan.</p>
+    <p>Vraag: <em>"Bij de prijslijsten staat er niets vooraan. Waarom staan ze toch goed?"</em> (Ze beginnen allemaal met <em>Prijslijst -</em>, dus beslist de naam van de leverancier.)</p>
+    <p>Eén zin over het waarom: <em>"Een bedrijf moet zijn facturen jaren bewaren. De boekhouding vraagt naar factuur 0409: in deze map vind je ze meteen."</em></p>
+  </template>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+  <p class="kicker">Ik doe · dia 3 van 4</p>
+  <h2>Waarom jaar-maand-dag?</h2>
+  <p class="vraag">Drive zet de namen van A tot Z. Welke bon is de oudste?</p>
+  <div class="stapel">
+    <div class="panel">
+      <p class="bad-label">Zo staat de datum op de bon: dag-maand-jaar</p>
+      <ul class="namen">
+        <li><span class="sl">02-10-2026</span> Leveringsbon - Zuivelhoeve De Melkkan</li>
+        <li><span class="sl">13-10-2026</span> Leveringsbon - Bakkerij Korstjes</li>
+        <li><span class="sl">28-09-2026</span> Leveringsbon - Fruitgroothandel Appelbloesem <span class="oud reveal-item">← de oudste staat onderaan</span></li>
+      </ul>
+    </div>
+    <div class="panel reveal-item">
+      <p class="good-label">Zo schrijf jij ze: jaar-maand-dag</p>
+      <ul class="namen">
+        <li><span class="sl">2026-09-28</span> Leveringsbon - Fruitgroothandel Appelbloesem</li>
+        <li><span class="sl">2026-10-02</span> Leveringsbon - Zuivelhoeve De Melkkan</li>
+        <li><span class="sl">2026-10-13</span> Leveringsbon - Bakkerij Korstjes</li>
+      </ul>
+    </div>
+  </div>
+  <template class="note">
+    <p><strong>Ik doe, 1'30". Het probleem eerst.</strong> Laat de vraag beantwoorden voor je klikt. Verwacht: "28 september is de oudste." Vraag: <em>"Waarom staat ze dan onderaan?"</em></p>
+    <p>Klik (→): de pijl verschijnt. Uitleg: <em>"Drive leest van links naar rechts, teken per teken. 0 komt vóór 1, en 1 vóór 2. Of het een dag is of een jaar, weet Drive niet."</em></p>
+    <p>Klik (→): jaar-maand-dag. <em>"Zet het grootste vooraan: eerst het jaar, dan de maand, dan de dag. Nu klopt de volgorde."</em> Wijs aan: op de bon staat <em>28-09-2026</em>, jij schrijft <em>2026-09-28</em>: de drie stukken omgedraaid.</p>
+  </template>
+</section>
+
+<!-- 6 -->
+<section class="slide compact">
+  <p class="kicker">Ik doe · dia 4 van 4 · demo</p>
+  <h2>De datum vooraan</h2>
+  <p class="fname"><span class="sl">2026-10-13</span> Leveringsbon - Bakkerij Korstjes<span class="ext">.docx</span></p>
+  <div class="panel">
+    <ol class="steps1">
+      <li>Rechtermuisknop op de bon › <span class="mono">Naam wijzigen</span></li>
+      <li>Druk op <span class="mono">Home</span>: de cursor springt vooraan.</li>
+      <li>Typ <span class="mono">2026-10-13</span> en een spatie › <span class="mono">OK</span></li>
+    </ol>
+  </div>
+  <p class="reveal-item" style="color:#A0372A;margin-top:18px"><strong>Zonder Home</strong> typ je over de hele naam. Dan is ze weg.</p>
+  <template class="note">
+    <p><strong>Ik doe, 2' — hardop denkend voordoen</strong> in je eigen map NovaDepot (klaarzetten: zie README, stap 2).</p>
+    <ol>
+      <li>Open de map Leveringen. Dubbelklik op de bon van Bakkerij Korstjes. Zeg: <em>"Bij Levering staat 13 oktober 2026. Dat wordt 2026-10-13: jaar, maand, dag."</em> Sluit de bon.</li>
+      <li>Rechtermuisknop op de bon › Naam wijzigen. Zeg: <em>"Kijk: de hele naam is blauw. Als ik nu typ, is de naam weg."</em></li>
+      <li>Druk op Home. <em>"De cursor staat vooraan. De rest blijft staan."</em> Typ 2026-10-13, een spatie, klik op OK.</li>
+    </ol>
+    <p>Druk op → voor de waarschuwing. Toon dan nog kort het omgekeerde: <em>"Staat de nieuwste bovenaan? Sorteren › Naam › A tot Z."</em> (Staat op de lespagina bij Hulp nodig?, stap 4.)</p>
+    <p><strong>Stap 2 en 3 (zip-bestand, verplaatsen) doe je niet voor:</strong> dat kennen ze uit les 06. Op deze computers pakken ze uit in de Verkenner; de lespagina zegt hoe. Ga meteen door naar <em>Zo werk je verder</em>.</p>
+  </template>
+</section>
+
+<!-- 7 -->
+<section class="slide compact">
+  <p class="kicker">Keuzewerktijd · 40 minuten</p>
+  <h2>Zo werk je verder</h2>
+  <div class="two" style="grid-template-columns: 1.6fr 1fr">
+    <div>
+      <ol class="steps2">
+        <li>Klaarzetten <span class="klok">3'</span></li>
+        <li>Nieuwe documenten <span class="klok">8'</span></li>
+        <li>Op de juiste plaats <span class="klok">6'</span></li>
+        <li>Op datum <span class="klok">9'</span></li>
+        <li>Op nummer <span class="klok">7'</span></li>
+        <li>Controleren en inleveren <span class="klok">7'</span></li>
+      </ol>
+    </div>
+    <div class="panel navy">
+      <p style="font-size:25px"><strong>Vast?</strong></p>
+      <p style="font-size:26px">1. Theoriekaart<br>2. Hulp nodig?<br>3. Je buur &nbsp; 4. Ik</p>
+      <p style="margin-top:14px;font-size:22px">Vink af in de <strong>checklist</strong>.</p>
+    </div>
+  </div>
+  <p class="klok" style="margin-top:18px;font-size:25px">
+    <strong>Alles staat in de opdracht in Google Classroom</strong> <em>Werkplek 2 — Het digitale klassement</em>: de lespagina, je werkdocument en de zip-bestanden.
+    Je levert alleen je <strong>werkdocument</strong> in.<br>Adres: jonasdaltongent.github.io/Klassement-NovaDepot/<!-- PAS AAN --></p>
+  <template class="note">
+    <p><strong>Keuzewerktijd, 40'.</strong> Laat deze dia staan zolang ze werken. De minuten per stap tellen samen op tot 40, inleveren inbegrepen.</p>
+    <p>Eerste rondgang: wie les 06 miste, haalt in stap 1 de kant-en-klare map (NovaDepot.zip). Kijk daarna of in stap 2 de zes <strong>losse</strong> bestanden in NovaDepot staan, en niet het zip-bestand. Uitpakken: Verkenner (Windows + E) › Downloads › rechtermuisknop › Alles uitpakken…</p>
+    <p>Tweede rondgang, rond stap 4: laat een nieuwe naam luidop lezen. <em>"Staat het jaar vooraan? Staat de oudste bon bovenaan?"</em> Bij stap 5: <em>"Welk nummer koos je, de datum of het factuurnummer?"</em></p>
+    <p><strong>Vergeet niet</strong> het adres op deze dia aan te passen als de repository anders heet.</p>
+  </template>
+</section>
+
+<!-- 8 -->
+<section class="slide" data-answer>
+  <p class="kicker">Afsluiten · laatste minuut</p>
+  <h2>Eén vraag voor je vertrekt</h2>
+  <div class="panel navy" style="margin-top:10px">
+    <p style="font-size:30px">Factuur <strong>2026-0401</strong> komt binnen. Waar komt ze in je map Facturen?</p>
+  </div>
+  <p class="answer">Tussen 2026-0398 en 2026-0409: op de tweede plaats.</p>
+  <p style="margin-top:24px">Volgende les: <strong>delen met de juiste rechten</strong>. Wie mag jouw planning lezen, en wie mag ze veranderen?</p>
+  <template class="note">
+    <p><strong>Afsluiting, laatste minuut van de keuzewerktijd.</strong> Laat twee of drie leerlingen antwoorden, en druk dan op → voor het antwoord. Wie "bovenaan" zegt, keek naar de datum of las het nummer niet helemaal.</p>
+    <p>Zeg mondeling dat wie niet klaar is, toch inlevert.</p>
+    <p>Kijk na de les naar deel 3 van de werkdocumenten: kunnen ze uitleggen waarom jaar-maand-dag? Begin les 08 daarmee als het vaak misliep.</p>
+  </template>
+</section>
+
+</div></div>
+<div class="notes" id="notes"></div>
+<script src="js/slides.js"></script>
+</body>
+</html>
