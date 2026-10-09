@@ -7,7 +7,7 @@
   <link rel="icon" href="assets/novadepot-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-storage="novadepot_klassement_v1_" data-laatste-stap="6">
+<body data-storage="novadepot_klassement_v1_" data-laatste-stap="6" data-ai-hulp="uit">
 
 <!-- Pictogrammen: eenvoudige lijntekeningen, eigen werk. Gebruik: een svg met class "ic" en daarin use met href naar het symbool. -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -28,6 +28,10 @@
   <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
   <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
   <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9l-5.2 2.8 1-5.9-4.3-4.1 5.9-.8z"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.9 5.1L18 10l-5.1 1.9L11 17l-1.9-5.1L4 10l5.1-1.9z"/><path d="M18.5 14.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 12V6a1.5 1.5 0 0 1 3 0v5"/><path d="M11 10.5V4.5a1.5 1.5 0 0 1 3 0v6"/><path d="M14 10.5V6a1.5 1.5 0 0 1 3 0v7.5"/><path d="M8 11.5l-1.5-1.5a1.6 1.6 0 0 0-2.3 2.3l3.6 4.2A6.5 6.5 0 0 0 17 13.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.2a5 5 0 0 1 5 5"/></symbol>
   <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
   <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
   <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/></symbol>
@@ -81,12 +85,49 @@
         <div class="card-body">
           <p class="intro">NovaDepot heeft twee nieuwe leveranciers: Fruitgroothandel Appelbloesem en Zuivelhoeve De Melkkan. Van elk kwamen een leveringsbon, een factuur en een prijslijst. Jij zet ze in je map NovaDepot, in de juiste volgorde.</p>
 
-          <h2 class="sec">Zo werk je</h2>
-          <div class="werkwijze">
-            <div class="werk-tegel"><svg class="ic" aria-hidden="true"><use href="#i-monitor"/></svg><strong>Lees hier</strong><span>Op deze pagina staat wat je moet doen, stap voor stap.</span></div>
-            <div class="werk-tegel"><svg class="ic" aria-hidden="true"><use href="#i-folder"/></svg><strong>Werk in Drive</strong><span>In je map NovaDepot maak je je klassement.</span></div>
-            <div class="werk-tegel inleveren"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg><strong>Schrijf in je werkdocument</strong><span>Dat lever je in. Niets anders.</span></div>
-          </div>
+          <h2 class="sec">Wat heb je nodig?</h2>
+          <ol class="nodig vier">
+            <li class="nodig-item">
+              <div class="mock mock-opdracht" aria-hidden="true">
+                <div class="mo-titel">Werkplek 2 — Het digitale klassement</div>
+                <div class="mo-chip"><svg class="ic"><use href="#i-link"/></svg><span>Les 07 · Het digitale klassement</span></div>
+                <div class="mo-chip"><svg class="ic"><use href="#i-doc"/></svg><span>WP2_Het-digitale-klassement</span></div>
+                <div class="mo-knop">Inleveren</div>
+              </div>
+              <p class="nodig-naam">De opdracht in Google Classroom</p>
+              <p class="nodig-uitleg">Hier begin je. Hier lever je in.</p>
+            </li>
+            <li class="nodig-item">
+              <div class="mock mock-lespagina" aria-hidden="true">
+                <div class="ml-balk"></div>
+                <div class="ml-midden">
+                  <div class="ml-route"><span></span><span></span><span></span><span></span></div>
+                  <div class="ml-stap"><span class="ml-tag">Stap 1</span><span class="ml-lijn"></span><span class="ml-lijn kort"></span><span class="ml-lijn"></span></div>
+                </div>
+                <div class="ml-hier">Je bent hier</div>
+              </div>
+              <p class="nodig-naam">Deze lespagina</p>
+              <p class="nodig-uitleg">Hier lees je wat je moet doen, stap voor stap.</p>
+            </li>
+            <li class="nodig-item">
+              <div class="mock mock-drive" aria-hidden="true">
+                <div class="md-balk">Mijn Drive › NovaDepot</div>
+                <div class="md-rij"><svg class="ic"><use href="#i-folder"/></svg>Facturen</div>
+                <div class="md-rij"><svg class="ic"><use href="#i-folder"/></svg>Leveringen</div>
+                <div class="md-rij"><svg class="ic"><use href="#i-folder"/></svg>Prijslijsten</div>
+              </div>
+              <p class="nodig-naam">Je map NovaDepot in Drive</p>
+              <p class="nodig-uitleg">Hier maak je je klassement.</p>
+            </li>
+            <li class="nodig-item inleveren">
+              <div class="mock mock-werkdocument" aria-hidden="true">
+                <div class="mw-balk"><svg class="ic"><use href="#i-doc"/></svg>WP2_Het-digitale-klassement</div>
+                <div class="mw-blad"><div class="mw-tekst"><span></span><span></span><span class="kort"></span><span></span><span class="kort"></span></div></div>
+              </div>
+              <p class="nodig-naam">Je werkdocument WP2</p>
+              <p class="nodig-uitleg">Hier schrijf je. Dit lever je in.</p>
+            </li>
+          </ol>
 
           <h2 class="sec">Na deze les kan je</h2>
           <ul class="doelen">
@@ -95,7 +136,14 @@
             <li>uitleggen waarom een bedrijf zijn documenten klasseert.</li>
           </ul>
 
-          <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Vast?</strong> Kijk eerst op de theoriekaart. Open dan <em>Hulp nodig?</em> onder de stap. Vraag het daarna aan je buur, en pas dan aan je leraar.</p></div>
+          <h2 class="sec">Vast? Probeer het in deze volgorde</h2>
+          <ol class="vast">
+            <li><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg><span>Theoriekaart</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg><span><em>Hulp nodig?</em> onder de stap</span></li>
+            <li class="ai-hulp"><svg class="ic" aria-hidden="true"><use href="#i-spark"/></svg><span>AI-hulp in de opdracht</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg><span>Je buur</span></li>
+            <li><svg class="ic" aria-hidden="true"><use href="#i-hand"/></svg><span>Je leraar</span></li>
+          </ol>
 
           <p class="start-cta"><button class="btn btn-primary" type="button" data-goto="1">Start met stap 1 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button></p>
         </div>
@@ -131,6 +179,14 @@
               </ul>
             </section>
 
+            <section class="t-card ai-hulp">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-spark"/></svg>Slim met de AI-hulp</h3>
+              <ol class="t-delen">
+                <li>Typ geen namen of persoonlijke gegevens.</li>
+                <li>De AI-hulp kent alleen deze les.</li>
+                <li>Controleer het antwoord: klik op het nummertje, of kijk in de stap.</li>
+              </ol>
+            </section>
             <section class="t-card wide">
               <h3><svg class="ic" aria-hidden="true"><use href="#i-sort"/></svg>Drie manieren om te ordenen</h3>
               <table class="t-rows">

@@ -285,3 +285,6 @@ De repository krijgt dezelfde `pre-push` hook als de andere lessen: bij elke pus
    vrijdag 20.00 uur.
 6. **Haalbaarheid.** Stap 2 (downloaden, uitpakken, uploaden) is het riskante stuk. Loopt het vast, laat de
    leerlingen dan in stap 5 maar één factuur doen.
+7. **Nieuw sinds 09-10-2026, voor alle klassen**: de vaste startdia *Zo start je* (dia 1) en de startpagina met
+   *Wat heb je nodig?* in beelden en *Vast?* als rij. Geraken de leerlingen zo zonder hulp tot bij de opdracht,
+   de lespagina en het werkdocument? (`_afspraken/presentatie.md`, `_afspraken/lespagina.md`)
