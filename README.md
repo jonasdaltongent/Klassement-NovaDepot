@@ -39,6 +39,7 @@ W07 - Les 07 - ORLO - Het digitale klassement/
 ├── assets/
 │   ├── novadepot-logo.svg/.png, novadepot-icon.svg, dalton-gent-logo.png
 │   ├── fonts/                   # Atkinson Hyperlegible + Montserrat (OFL, zelf gehost)
+│   ├── mascotte/                # Dalton de bever, de poses uit het sjabloon (.webp)
 │   ├── video/                   # stap3-verplaatsen, stap4-datum-vooraan (09-10-2026) + zip-downloaden (uit les 06)
 │   └── screenshots/             # zes schermafbeeldingen (09-10-2026) + LEESMIJ.md
 ├── werkdocument/
