@@ -23,8 +23,8 @@ nummer** (het factuurnummer vooraan), en de prijslijsten staan vanzelf **op naam
 > [!NOTE]
 > **Wie les 06 miste.** Hun map staat in hun eigen Drive: daar kan jij niet aan, en ook geen script. Daarom
 > hangt er een **kant-en-klare map** aan de opdracht: `NovaDepot.zip`. Uitpakken in de Verkenner en in Drive
-> zetten met **Nieuw › Map uploaden** duurt ± 2 minuten. Het staat bij *Hulp nodig?* in stap 1, met een
-> schermafbeelding. Wie een map heeft die niet klopt, geeft die eerst de naam *NovaDepot oud*.
+> zetten met **Nieuw › Map uploaden** duurt ± 2 minuten. Het staat in stap 1, handeling 4 (dicht tot de leerling ze
+> opent), met een schermafbeelding. Wie een map heeft die niet klopt, geeft die eerst de naam *NovaDepot oud*.
 
 ---
 
@@ -33,7 +33,7 @@ nummer** (het factuurnummer vooraan), en de prijslijsten staan vanzelf **op naam
 ```text
 W07 - Les 07 - ORLO - Het digitale klassement/
 ├── index.html                   # de lespagina: route · één stap · checklist
-├── presentatie.html             # 8 dia's voor de lesstart en "Ik doe"
+├── presentatie.html             # 10 dia's; dia 7 controle, dia 8 samen stap 1, dia 9 kloktijden
 ├── css/style.css, css/slides.css
 ├── js/script.js, js/slides.js
 ├── assets/
@@ -62,7 +62,7 @@ Dezelfde opbouw als les 06: links de **route** (zes stappen in twee groepen: *Je
 klassement*), midden **één stap** met vijf vaste blokken, rechts de **checklist** met 18 taken. Op een smal
 venster staat alles onder elkaar en zie je alleen de taken van de huidige stap; in stap 6 staat de hele lijst open.
 
-- 4 tot 6 handelingen per stap, één tip en één *Hulp nodig?* per stap.
+- 2 tot 5 handelingen per stap, één tip per stap (de fout die het vaakst gebeurt).
 - **Stap 3** en **stap 4** hebben een filmpje van 13 seconden dat vanzelf herhaalt, met nummers die bij de
   handelingen horen. Stap 4, 5 en 6 tonen ook een schermafbeelding van het resultaat: *zo ziet je map er daarna uit*.
 - De **naamkaart** in stap 4 en 5 toont in kleur wat er vooraan komt (de datum, het nummer) en wat blijft staan.
@@ -70,6 +70,19 @@ venster staat alles onder elkaar en zie je alleen de taken van de huidige stap; 
   `28-09-2026`.
 - Windows 11 (lokaal 18). `localStorage` bewaart alleen de vinkjes en de laatste stap (voorvoegsel
   `novadepot_klassement_v1_`), met een wisknop.
+
+- **Stap voor stap / Kort** (sinds 11-10-2026, zoals MW les 03; Jonas: "Pas je de lessen van ORLO ook aan volgens
+  de nieuwe afspraken?"): elke handeling is één vette regel; open je ze, dan zie je de kleine stapjes, elk met één
+  beeld (`assets/stapjes/`). Bovenaan *Wat moet je doen?* zet *Stap voor stap* alles open en *Kort* alles dicht. De
+  les begint in *Stap voor stap* (`data-modus-start="stap"`). *Hulp nodig?* is weg: wat erin stond, staat als grijze
+  regel onder het stapje of de handeling waar het misloopt; het tipvak bevat de meest waarschijnlijke fout. De
+  hulpvolgorde is korter: *Toon stapjes* → je buur → jij.
+- **De beelden bij de stapjes** (11-10-2026): uitsneden uit de filmpjes van stap 3 en 4 (Verplaatsen, Naam
+  wijzigen, Home, OK; de rode kaders zaten al in de filmpjes) en `stap1-map-uploaden.png` en
+  `stap2-bestand-uploaden.png`. Voor Classroom, de tabbladen, de lijst links in Drive en de **Verkenner** zijn het
+  tekeningen in HTML en CSS (`.mock-opdracht`, `.teken-tabs`, `.teken-ui`): van de Verkenner zijn er geen
+  schermafbeeldingen. Handeling 4 van stap 1 (*les 06 gemist*) heeft `data-dicht`: ze blijft dicht, ook in
+  *Stap voor stap*.
 
 ---
 
@@ -131,7 +144,7 @@ en heb je meteen de inhaalweg zelf eens gedaan.
 
 ### Afvinklijst vóór de les
 
-- [ ] De lespagina staat online en het adres op dia 7 klopt.
+- [ ] De lespagina staat online en het adres op dia 9 klopt.
 - [ ] De opdracht staat in de drie klassen, met vier bijlagen en de juiste instelling per bijlage.
 - [ ] Een testleerling krijgt een eigen kopie van het werkdocument, met de eigen naam in de titel.
 - [ ] Met een **leerlingaccount** getest: de zip downloaden uit de opdracht (Openen met › Openen in nieuw tabblad › pijl linksboven).
@@ -162,15 +175,16 @@ schermafbeeldingen (Claude)*, en in de Nederlandse help:
 
 | Fase | Tijd | Wat |
 |---|---|---|
-| **Instructie** | **10'** | Dia 1 terwijl de computers opstarten. Dia 2 lesstart (3'): *waar zit de factuur van Vellekens, en hoe heet ze?* Dia 3–6 (5'30"): lesdoel, drie mappen en drie manieren, de puzzel *waarom jaar-maand-dag?*, de demo met **Home**. Dia 7 *Zo werk je verder* (30"). |
-| **Keuzewerktijd** | **40'** | Dia 7 blijft staan; de leerlingen werken stap 1 tot 6 af, inleveren inbegrepen. Dia 8 in de laatste minuut. |
+| **Instructie** | **10'** | Dia 1 terwijl de computers opstarten. Dia 2 lesstart (3'): *waar zit de factuur van Vellekens, en hoe heet ze?* Dia 3–6 (5'30"): lesdoel, drie mappen en drie manieren, de puzzel *waarom jaar-maand-dag?*, de demo met **Home**. Dia 7 controle (1'): *wat doe je eerst?* (Home). |
+| **Samen** | **3'** | Dia 8: iedereen doet stap 1 terwijl jij de schermen ziet; duim op als ze klaar zijn. |
+| **Keuzewerktijd** | **tot het einde** | Dia 9 blijft staan, met **kloktijden** uit de planning (`_tools/zet_lesmomenten.py`; T rekent opnieuw); stap 2 tot 6, inleveren inbegrepen. Dia 10 in de laatste minuut. |
 
 Je doet alleen **de datum vooraan** voor. Het zip-bestand, het uitpakken en het verplaatsen kennen ze uit les 06;
 nieuw is alleen dat ze uitpakken in de **Verkenner** in plaats van in de app Bestanden van de Chromebook.
 
 **Eerste rondgang, kijk naar twee dingen:**
 
-1. Heeft iedereen een map NovaDepot met drie mappen? Wie niet: stap 1, *Hulp nodig?* (`NovaDepot.zip`).
+1. Heeft iedereen een map NovaDepot met drie mappen? Wie niet: stap 1, handeling 4 (`NovaDepot.zip`).
 2. Staan in stap 2 de zes **losse** bestanden in NovaDepot, en niet het zip-bestand?
 
 **Tweede rondgang, rond stap 4 en 5:** laat een nieuwe naam luidop lezen. *"Staat het jaar vooraan? Staat de
@@ -241,11 +255,11 @@ in beeld, Mac-sneltoetsen in de menu's zijn afgedekt. De lijst staat in `assets/
 |---|---|
 | `video/stap3-verplaatsen.mp4` | stap 3: Ordenen › Verplaatsen › NovaDepot › Leveringen › Verplaatsen |
 | `video/stap4-datum-vooraan.mp4` | stap 4: Naam wijzigen › Home › datum › OK |
-| `video/zip-downloaden.mp4` | stap 2, *Hulp nodig?* (uit les 06; een ander zip-bestand, dezelfde klikken) |
-| `screenshots/stap1-map-uploaden.png` | stap 1, *Hulp nodig?* (inhalen) |
+| `video/zip-downloaden.mp4` | stap 2, onder de handelingen (uit les 06; een ander zip-bestand, dezelfde klikken) |
+| `screenshots/stap1-map-uploaden.png` | stap 1, handeling 4 (inhalen); ook als stapje `stapjes/map-uploaden.png` |
 | `screenshots/stap2-bestand-uploaden.png` | stap 2 |
 | `screenshots/stap4-leveringen-klaar.png`, `stap5-facturen-klaar.png`, `stap6-prijslijsten.png` | stap 4, 5 en 6: zo ziet de map er daarna uit |
-| `screenshots/stap4-sorteren.png` | stap 4, *Hulp nodig?*: Sorteren › Naam › A tot Z |
+| `screenshots/stap4-sorteren.png` | niet meer op de pagina (stap 4 zegt het in een grijze regel) |
 
 Er zijn geen beelden van de **Verkenner** (uitpakken): die kan ik vanaf je Mac niet maken. Wil je ze toch, maak
 dan in lokaal 18 een knipsel (**Windows** + **Shift** + **S**) en zet het in `assets/screenshots/`.
@@ -274,9 +288,14 @@ De repository krijgt dezelfde `pre-push` hook als de andere lessen: bij elke pus
 
 ## 8. Wat nog moet blijken in de klas
 
+- **Stap voor stap / Kort** (overgenomen van MW les 03, 11-10-2026): kiezen leerlingen zelf *Kort*? Wordt de
+  pagina met alle beelden te lang? Vinden wie les 06 miste handeling 4 van stap 1?
+- Komen ze vlotter op gang na de controledia en *Iedereen doet stap 1*?
+
+
 1. **Uitpakken in lokaal 18.** De help zegt alleen *Alles uitpakken… en volg de instructies*. De pagina zegt
    daarom *bevestig in het venster dat opengaat*. Heet de nieuwe map in Downloads echt `Nieuwe-documenten`?
-2. **De toets Home.** Op een Belgisch toetsenbord staat er soms een pijl ↖ of *Début* op. Bij *Hulp nodig?* in
+2. **De toets Home.** Op een Belgisch toetsenbord staat er soms een pijl ↖ of *Début* op. Onder stapje b van
    stap 4 staat de terugweg: de pijl naar links ←.
 3. **Map uploaden (inhalen).** Chrome vraagt of je de bestanden wil uploaden; de pagina zegt *bevestig*. Ga na
    of dat bij een leerlingaccount ook zo loopt.
