@@ -66,8 +66,12 @@ venster staat alles onder elkaar en zie je alleen de taken van de huidige stap; 
 - **Stap 3** en **stap 4** hebben een filmpje van 13 seconden dat vanzelf herhaalt, met nummers die bij de
   handelingen horen. Stap 4, 5 en 6 tonen ook een schermafbeelding van het resultaat: *zo ziet je map er daarna uit*.
 - De **naamkaart** in stap 4 en 5 toont in kleur wat er vooraan komt (de datum, het nummer) en wat blijft staan.
-- De **zelftest** in stap 6 heeft drie vragen, waarvan één de valkuil is: van A tot Z staat `02-10-2026` vóór
-  `28-09-2026`.
+- De **zelftest** in stap 6 heeft drie vragen, waarvan één de valkuil is: van Z tot A staat `28-09-2026` vóór
+  `02-10-2026`, terwijl 2 oktober nieuwer is.
+- **Volgorde: de nieuwste bovenaan** (Jonas, 12-10-2026), zoals de klasseerregel in Lift 3A Thema 4, p. 113. In Drive
+  is dat **Sorteren › Naam › Z tot A** (stap 4, handeling 5). Drive onthoudt die keuze voor alle mappen (nagekeken in
+  je demomap, 12-10-2026): ook de facturen staan dan met het hoogste nummer bovenaan, en de prijslijsten van Z tot A.
+  Dat zegt de pagina eerlijk: het blijft alfabetisch, alleen omgekeerd.
 - Windows 11 (lokaal 18). `localStorage` bewaart alleen de vinkjes en de laatste stap (voorvoegsel
   `novadepot_klassement_v1_`), met een wisknop.
 
@@ -166,7 +170,7 @@ schermafbeeldingen (Claude)*, en in de Nederlandse help:
 | Verplaatsen | rechtermuisknop › **Ordenen** › **Verplaatsen**; het venster opent op **Voorgesteld**: klik naast *Huidige locatie* op **NovaDepot**, kies de map › **Verplaatsen** | jouw scherm (08-10 en 09-10-2026) |
 | Naam wijzigen | rechtermuisknop › **Naam wijzigen**; de hele naam staat geselecteerd; **Home** zet de cursor vooraan en de naam blijft staan › **OK** (of **Annuleren**) | jouw scherm (09-10-2026) |
 | Sorteren | rechts boven de lijst **Sorteren** › onder *Sorteren op* **Naam**, onder *Sorteerrichting* **A tot Z** (of **Z tot A**); onder *Mappen* **Bovenaan** · **Tussen de bestanden** | jouw scherm (09-10-2026) |
-| Volgorde van A tot Z | cijfers komen vóór letters: de bonnen met een datum staan boven de foto | jouw scherm (09-10-2026) |
+| Volgorde van Z tot A | letters komen vóór cijfers: de foto zonder datum staat boven de bonnen; de keuze geldt in alle mappen | jouw scherm (09-10-2026) · je demomap (12-10-2026) |
 | Inleveren | **Inleveren** · **Inleveren ongedaan maken** | [Classroom 6020285](https://support.google.com/edu/classroom/answer/6020285?hl=nl) |
 
 ---
@@ -188,7 +192,7 @@ nieuw is alleen dat ze uitpakken in de **Verkenner** in plaats van in de app Bes
 2. Staan in stap 2 de zes **losse** bestanden in NovaDepot, en niet het zip-bestand?
 
 **Tweede rondgang, rond stap 4 en 5:** laat een nieuwe naam luidop lezen. *"Staat het jaar vooraan? Staat de
-oudste bon bovenaan?"* · *"Welk nummer koos je: de datum of het factuurnummer?"*
+nieuwste bon bovenaan?"* · *"Welk nummer koos je: de datum of het factuurnummer?"*
 
 Zeg aan het einde mondeling dat wie niet klaar is, toch inlevert.
 
@@ -207,8 +211,8 @@ leerlingen hun map NovaDepot met jou (als kijker).
 | Fruitgroothandel Appelbloesem | 2026-09-28 | `2026-09-28 Leveringsbon - Fruitgroothandel Appelbloesem.docx` |
 | Zuivelhoeve De Melkkan | 2026-10-02 | `2026-10-02 Leveringsbon - Zuivelhoeve De Melkkan.docx` |
 
-In Drive: Appelbloesem, Melkkan, Korstjes, en onderaan de foto. Zonder datum stonden ze op naam, met de nieuwste
-(Korstjes) bovenaan.
+In Drive (Z tot A): de foto, dan Korstjes, Melkkan, Appelbloesem. De foto staat bovenaan omdat ze geen datum heeft
+(van Z tot A komen letters vóór cijfers); in *Extra* krijgt ze er een.
 
 ### Deel 2 — Facturen: op nummer
 
@@ -228,7 +232,7 @@ Wat moet kloppen: de sleutel vooraan (jaar-maand-dag, of het factuurnummer), en 
 | Vraag | Waar het om gaat |
 |---|---|
 | 1 | Een **alfabetisch** klassement. Alle namen beginnen met *Prijslijst -*, dus beslist de naam van de leverancier. Die namen kregen ze al in les 06 (Wat - Van wie). |
-| 2 | Drive leest de naam van links naar rechts. Met dag-maand-jaar komt `02-10` vóór `28-09`, terwijl 28 september ouder is. Met het jaar eerst, dan de maand, dan de dag, staat de oudste bovenaan. |
+| 2 | Drive leest de naam van links naar rechts. Met dag-maand-jaar komt `02-10` vóór `28-09`, terwijl 28 september ouder is. Met het jaar eerst, dan de maand, dan de dag, klopt de volgorde: met Z tot A staat de nieuwste bovenaan. Ook goed: *"Van Z tot A komt 28-09 vóór 02-10, maar 2 oktober is nieuwer."* |
 | 3 | Eén reden: je vindt een document snel terug (ook een collega) · je ziet wat er ontbreekt · een bedrijf moet zijn facturen jaren bewaren. |
 
 ### Extra
@@ -259,7 +263,7 @@ in beeld, Mac-sneltoetsen in de menu's zijn afgedekt. De lijst staat in `assets/
 | `screenshots/stap1-map-uploaden.png` | stap 1, handeling 4 (inhalen); ook als stapje `stapjes/map-uploaden.png` |
 | `screenshots/stap2-bestand-uploaden.png` | stap 2 |
 | `screenshots/stap4-leveringen-klaar.png`, `stap5-facturen-klaar.png`, `stap6-prijslijsten.png` | stap 4, 5 en 6: zo ziet de map er daarna uit |
-| `screenshots/stap4-sorteren.png` | niet meer op de pagina (stap 4 zegt het in een grijze regel) |
+| `screenshots/stap4-sorteren.png` | stap 4, handeling 5: Sorteren › Naam › Z tot A (opnieuw opgenomen op 12-10-2026, net als de drie beelden van het resultaat) |
 
 Er zijn geen beelden van de **Verkenner** (uitpakken): die kan ik vanaf je Mac niet maken. Wil je ze toch, maak
 dan in lokaal 18 een knipsel (**Windows** + **Shift** + **S**) en zet het in `assets/screenshots/`.
@@ -288,6 +292,8 @@ De repository krijgt dezelfde `pre-push` hook als de andere lessen: bij elke pus
 
 ## 8. Wat nog moet blijken in de klas
 
+- **De nieuwste bovenaan** (12-10-2026): vinden ze *Z tot A*? Storen ze zich aan de foto bovenaan en aan de prijslijsten
+  van Z tot A?
 - **Stap voor stap / Kort** (overgenomen van MW les 03, 11-10-2026): kiezen leerlingen zelf *Kort*? Wordt de
   pagina met alle beelden te lang? Vinden wie les 06 miste handeling 4 van stap 1?
 - Komen ze vlotter op gang na de controledia en *Iedereen doet stap 1*?

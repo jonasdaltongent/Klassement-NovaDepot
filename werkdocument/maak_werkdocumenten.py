@@ -23,7 +23,8 @@ LET OP bij aanpassen:
    voorbeeld in rij 1 van het werkdocument, en de leraar doet het voor.
  - Op elke factuur staat ook een datum. Die is NIET de sleutel: de leerling kiest het factuurnummer.
  - Zonder sleutel staan de bonnen op naam (Bakkerij Korstjes, Fruitgroothandel Appelbloesem, Zuivelhoeve De
-   Melkkan) en dus niet op datum: de nieuwste staat bovenaan. Met de datum vooraan (jaar eerst) klopt het.
+   Melkkan) en dus niet op datum. Met de datum vooraan (jaar eerst) en Drive op Z tot A staat de nieuwste
+   bovenaan, zoals in een ordner (Lift 3A Thema 4, p. 113; keuze van Jonas, 12-10-2026).
  - NovaDepot.zip bevat de vier bestanden van les 06 (rommel/ daar), juist benoemd en in hun map, in
    inhaal/NovaDepot/. Geen mapniveau erboven: "Alles uitpakken" maakt zelf de map NovaDepot (de naam van de
    zip), met Leveringen, Facturen en Prijslijsten erin.
@@ -284,7 +285,7 @@ def werkdocument():
 
     # ---- deel 3 ----
     kop(doc, "Deel 3 — Drie vragen (stap 6)")
-    tekst(doc, "Vraag 1. Je map Prijslijsten staat vanzelf van A tot Z. Hoe heet zo'n klassement? "
+    tekst(doc, "Vraag 1. Je map Prijslijsten staat vanzelf op alfabet. Hoe heet zo'n klassement? "
                "Waarom moest je daar geen namen veranderen?", vet=True, na=2)
     antwoordlijnen(doc, 2)
     tekst(doc, "Vraag 2. Waarom schrijf je de datum als 2026-10-02 en niet als 02-10-2026?", vet=True, na=2)
@@ -296,8 +297,8 @@ def werkdocument():
     kop(doc, "Zelfcontrole — aankruisen vóór je inlevert")
     for s in [
         "In NovaDepot staan geen losse bestanden meer: alles zit in een map.",
-        "In Leveringen staan de bonnen met de datum vooraan. De oudste staat bovenaan.",
-        "In Facturen staan de facturen met het nummer vooraan. Het kleinste staat bovenaan.",
+        "In Leveringen staan de bonnen met de datum vooraan. De nieuwste staat bovenaan (Z tot A).",
+        "In Facturen staan de facturen met het nummer vooraan. Het hoogste staat bovenaan.",
         "Achter elke naam staat nog .docx of .xlsx.",
         "Deel 1, 2 en 3 zijn ingevuld.",
     ]:

@@ -9,6 +9,8 @@ lesdag: "4ORLOb di 13 oktober (8ste uur), 3ORLO di 13 oktober (9de uur), 4ORLOa 
 leerplan: "Leerplannen/Leerplannen_2de_graad_TOINFO_ORLO_arbeidsmarkt.md"
 jaarplan: "Leerplannen/Lessenplan_TOINFO_ORLO_arbeidsmarkt_2026-2027.md — module 2, les 07"
 opgesteld_volgens: "_afspraken/ (werkruimte Toegepaste Informatica)"
+vakinhoud: "_vakinhoud/bestandsbeheer.md"
+register: "_bronnen/register/D-bestandsbeheer.md § D2, § D1"
 ---
 
 # Lesvoorbereiding — Les 07: Het digitale klassement
@@ -98,8 +100,8 @@ Keuze volgens het lessenplan (les 07: **`BK2_02.09`** (`.01`–`.03`) · `BV2_04
 ## 8. Succescriteria (leerlingtaal)
 
 - In NovaDepot staan geen losse bestanden meer.
-- In Leveringen begint elke bon met de datum, en de oudste staat bovenaan.
-- In Facturen begint elke factuur met het factuurnummer, en het kleinste staat bovenaan.
+- In Leveringen begint elke bon met de datum, en de nieuwste staat bovenaan.
+- In Facturen begint elke factuur met het factuurnummer, en het hoogste staat bovenaan.
 - Ik kan uitleggen waarom ik 2026-10-02 schrijf en niet 02-10-2026.
 
 ## 10. Benodigde voorkennis
@@ -147,7 +149,7 @@ zelfcontrole · extra (de foto, een nieuwe bon). Verwachte antwoorden: `README.m
 | Fase | Tijd | Inhoud |
 |---|---|---|
 | **Instructie** — lesstart | 1' + 3' | Dia 1 terwijl de computers opstarten. Dia 2, ophalen uit les 06: *Tom zoekt de factuur van Papierhandel Vellekens. Waar zit ze, en hoe heet ze?* Antwoord met vingers. |
-| **Instructie** — Ik doe | **5'30"** | Dia 3 lesdoel (30"). Dia 4 het eindproduct: drie mappen, drie manieren (1'30"). Dia 5 de puzzel: dag-maand-jaar van A tot Z zet de oudste bon onderaan; jaar-maand-dag lost het op (1'30"). Dia 6 **demo, hardop denkend** (2'): de bon van Bakkerij Korstjes › *Naam wijzigen* › **Home** › `2026-10-13 ` › *OK*. |
+| **Instructie** — Ik doe | **5'30"** | Dia 3 lesdoel (30"). Dia 4 het eindproduct: drie mappen, drie manieren (1'30"). Dia 5 de puzzel: dag-maand-jaar van Z tot A zet de nieuwste bon niet bovenaan; jaar-maand-dag lost het op (1'30"). Dia 6 **demo, hardop denkend** (2'): de bon van Bakkerij Korstjes › *Naam wijzigen* › **Home** › `2026-10-13 ` › *OK*. |
 | **Instructie** — zo werk je verder | 30" | Dia 7: waar alles staat (de opdracht), de stappen, de hulpvolgorde. |
 | **Keuzewerktijd** | **40'** | Stap 1 tot 6, inleveren inbegrepen. Eerste rondgang: inhaalmap voor wie les 06 miste, zes **losse** bestanden in NovaDepot (niet het zip-bestand). Tweede rondgang rond stap 4–5: een nieuwe naam luidop laten lezen. In de laatste minuut: dia 8 (exitvraag, vooruitblik) en mondeling: wie niet klaar is, levert toch in. |
 
@@ -191,10 +193,10 @@ en in `dalton-lesfiche.html`.
 ## 21. Controle van begrip
 
 - **Lesstart:** waar zit de factuur, en hoe heet ze (dia 2), met vingers.
-- **Tijdens de puzzel:** *"Welke bon is de oudste? Waarom staat ze dan onderaan?"*
+- **Tijdens de puzzel:** *"Welke bon is de nieuwste? Waarom staat ze dan niet bovenaan?"*
 - **Op de lespagina:** *Klaar als* bij elke stap, de checklist, een zelftest van drie vragen in stap 6 (waarvan
   één met de valkuil dag-maand-jaar).
-- **Exitvraag:** factuur 2026-0401: waar komt ze? (tussen 0398 en 0409).
+- **Exitvraag:** factuur 2026-0401: waar komt ze? (tussen 0409 en 0398, op de derde plaats).
 - **Na de les:** deel 3 van de werkdocumenten: kunnen ze jaar-maand-dag uitleggen? Begin les 08 daarmee als het
   vaak misliep.
 
@@ -217,7 +219,7 @@ de oude naam weg (alleen nog een datum of nummer) · het zip-bestand geüpload i
 ## 23. Feedback
 
 - **Tijdens de les**, met denkvragen: *"Lees je nieuwe naam luidop. Staat het jaar vooraan?"* · *"Welke bon is de
-  oudste? Staat ze bovenaan?"* · *"Welk nummer koos je: de datum of het factuurnummer?"*
+  nieuwste? Staat ze bovenaan?"* · *"Welk nummer koos je: de datum of het factuurnummer?"*
 - **Na de les:** één top en één tip in Classroom. Verbeteren en opnieuw inleveren mag.
 
 ## 24. Indieninstructies
@@ -266,3 +268,29 @@ de oude naam weg (alleen nog een datum of nummer) · het zip-bestand geüpload i
   met directe feedback.
 - Schermafbeeldingen die alleen verschijnen als het bestand bestaat (`index.html?leraar` toont de plaatsen).
 - Toestel: Windows 11 (lokaal 18). Geen logins, tracking of externe scripts.
+
+## Bronnenonderzoek
+
+Achteraf gedaan op 12-10-2026: de les bestond al vóór de afspraak over bronnenonderzoek (11-10-2026). Alle
+bronnen uit register D2 en D1 gelezen op de genoemde plaats, daarna breder gezocht (`klassement OR klasseren`,
+`chronologisch`, `numeriek klassement`, `factuurnummer`, `leveringsbon`, `JJJJMMDD OR NBN`, `bewaartermijn`).
+Alleen verwijzingen en eigen woorden.
+
+| Bron | Wat de les eruit gebruikt | Bewust niet |
+|---|---|---|
+| **Lift 3A Thema 4**, Level 4, p. 96–134 | de regel van het chronologisch klassement: het **meest recente document bovenaan** (p. 113, herhaald p. 115), daarom nu *Z tot A* · facturen hebben al een nummer, en een numeriek klassement kan je makkelijk uitbreiden (p. 107) · de datum als jaar-maand-dag om te klasseren (p. 110–111, *NBN-norm*; p. 114) · de methodes werken digitaal en manueel (p. 100) · waarom klasseren: veel tijd verloren met zoeken (p. 98) | de klasseerregels van het alfabetisch klassement (p. 101: soortnaam en lidwoord achteraan) en het alfanumeriek klassement (p. 112): les 50 · klasseermateriaal en meubels (p. 120–121): les 50 · de oefeningen zelf (uitgeverij: alleen inspiratie) |
+| Lift 3A Thema 3 (DOCflow) | p. 43: je klasseert om ordelijk te werken en alles snel terug te vinden (vraag 3) · p. 12: klasseren gebeurt altijd op dezelfde manier | de software van DOCflow |
+| Lift 3A Thema 2 en Thema 6 | p. 69, 83–84 (Thema 2) en p. 11 (Thema 6): een echte leveringsbon heeft ook een bonnummer; onze bonnen hebben er bewust geen, zodat de datum de enige sleutel is | — |
+| Regionaal Archief Nijmegen, folder | p. 7–8: een datum vooraan in de naam geeft een chronologische ordening, als JJJJMMDD; datum, type document en onderwerp in een vaste volgorde (= *datum Leveringsbon - Van wie*) · p. 5: een map bevat óf submappen óf bestanden, geen losse bestanden ernaast (succescriterium 1) | p. 6–7: geen spaties in namen (ORLO houdt spaties, zie `_vakinhoud/bestandsbeheer.md`, *Nog na te kijken* 1) |
+| Lift 4A Thema 5 | — | locatiecodes in het magazijn: past beter bij een latere les |
+
+**Tegenspraak** (§ 6 van de afspraak): Lift geeft als regel *het meest recente bovenaan* (p. 113, 115), maar zet in
+de eigen oefeningen de oudste datum bovenaan (p. 111, 114, 118). Nijmegen zegt alleen *chronologisch*. De les koos
+eerst de oudste bovenaan en noemde *Z tot A* een fout. Jonas koos op 12-10-2026 voor de regel: **de nieuwste
+bovenaan**. Drive onthoudt de sorteervolgorde voor alle mappen, dus ook de facturen (hoogste nummer = nieuwste
+factuur) en de prijslijsten (van Z tot A, nog altijd alfabetisch) staan omgekeerd. De pagina zegt dat zo.
+
+**Niet in een bron gevonden:** *"je ziet wat er ontbreekt"* (theoriekaart, *Waarom klasseren?*) en hoelang een
+bedrijf zijn facturen moet bewaren (Lift p. 119 gaat over documenten van een gezin). Beide staan in
+`_vakinhoud/bestandsbeheer.md` onder *Nog na te kijken*.
+

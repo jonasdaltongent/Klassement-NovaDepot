@@ -197,9 +197,9 @@
             <section class="t-card wide">
               <h3><svg class="ic" aria-hidden="true"><use href="#i-sort"/></svg>Drie manieren om te ordenen</h3>
               <table class="t-rows">
-                <tr><th>op datum</th><td><strong>chronologisch</strong>: van oud naar nieuw. Voor <strong>leveringsbonnen</strong>.</td></tr>
-                <tr><th>op nummer</th><td><strong>numeriek</strong>: van klein naar groot. Voor <strong>facturen</strong>.</td></tr>
-                <tr><th>op naam</th><td><strong>alfabetisch</strong>: van A tot Z. Voor <strong>prijslijsten</strong>, op de naam van de leverancier.</td></tr>
+                <tr><th>op datum</th><td><strong>chronologisch</strong>: de nieuwste bovenaan. Voor <strong>leveringsbonnen</strong>.</td></tr>
+                <tr><th>op nummer</th><td><strong>numeriek</strong>: het hoogste nummer bovenaan, dat is de nieuwste factuur. Voor <strong>facturen</strong>.</td></tr>
+                <tr><th>op naam</th><td><strong>alfabetisch</strong>: volgens het alfabet. Voor <strong>prijslijsten</strong>, op de naam van de leverancier.</td></tr>
               </table>
             </section>
 
@@ -217,7 +217,7 @@
               <p>Schrijf <strong>jaar-maand-dag</strong>: <code>2026-09-28</code>.</p>
               <ul>
                 <li>Op de bon staat <code>28-09-2026</code>. Draai de drie stukken om.</li>
-                <li>Zo staat de oudste bon bovenaan.</li>
+                <li>Met <span class="ui">Z tot A</span> staat dan de nieuwste bon bovenaan.</li>
               </ul>
             </section>
 
@@ -234,7 +234,8 @@
               <h3><svg class="ic" aria-hidden="true"><use href="#i-folder"/></svg>Verplaatsen en sorteren</h3>
               <ul>
                 <li>Rechtermuisknop › <span class="ui">Ordenen</span> › <span class="ui">Verplaatsen</span>.</li>
-                <li>Volgorde: rechts boven de lijst <span class="ui">Sorteren</span> › <span class="ui">Naam</span> en <span class="ui">A tot Z</span>.</li>
+                <li>Nieuwste bovenaan: rechts boven de lijst <span class="ui">Sorteren</span> › <span class="ui">Naam</span> › <span class="ui">Z tot A</span>.</li>
+                <li>Drive gebruikt die volgorde in al je mappen.</li>
               </ul>
             </section>
 
@@ -252,9 +253,9 @@
               <table class="t-rows">
                 <tr><th>klassement</th><td>een vaste manier om documenten te ordenen en te bewaren</td></tr>
                 <tr><th>klasseren</th><td>een document op de juiste plaats in een klassement zetten</td></tr>
-                <tr><th>chronologisch</th><td>op datum, van oud naar nieuw</td></tr>
-                <tr><th>numeriek</th><td>op nummer, van klein naar groot</td></tr>
-                <tr><th>alfabetisch</th><td>op naam, van A tot Z</td></tr>
+                <tr><th>chronologisch</th><td>op datum; in een bedrijf ligt de nieuwste bovenaan</td></tr>
+                <tr><th>numeriek</th><td>op nummer</td></tr>
+                <tr><th>alfabetisch</th><td>op naam, volgens het alfabet</td></tr>
                 <tr><th>sorteren</th><td>een lijst in een volgorde zetten</td></tr>
               </table>
             </section>
@@ -265,7 +266,7 @@
                 <li>De datum overgetypt zoals op de bon (<code>28-09-2026</code>), niet als jaar-maand-dag.</li>
                 <li>Bij een factuur de datum gebruikt in plaats van het factuurnummer.</li>
                 <li>Bij <span class="ui">Naam wijzigen</span> meteen getypt, zonder <span class="key">Home</span>: dan is de hele naam weg.</li>
-                <li>De lijst staat op <em>Z tot A</em>: dan staat de nieuwste bovenaan.</li>
+                <li>De lijst staat op <em>A tot Z</em>: dan staat de oudste bovenaan.</li>
               </ul>
             </section>
           </div>
@@ -419,7 +420,7 @@
           <h2 id="h-4">Op datum: de leveringsbonnen</h2>
         </header>
         <div class="card-body">
-          <p class="intro">Leveringsbonnen klasseer je op datum: de oudste bovenaan. Daarom zet je de datum <strong>vooraan</strong> in de naam.</p>
+          <p class="intro">Leveringsbonnen klasseer je op datum: de nieuwste bovenaan. Zo doet een bedrijf het ook in een ordner. Daarom zet je de datum <strong>vooraan</strong> in de naam.</p>
 
           <div class="nameplate">
             <div class="nameplate-head">Zo heet een leveringsbon in het klassement</div>
@@ -445,17 +446,23 @@
                   <li><p>Klik op <span class="ui">OK</span>.</p><img class="mini" src="assets/stapjes/ok.png" alt="Het venster Naam wijzigen. De knop OK staat in een rood kader." loading="lazy"></li>
                 </ol>
               </details></li>
-              <li><span class="doe-tekst">Doe dat voor de drie bonnen. Staat de oudste bon nu bovenaan?</span><span class="sub">Staat de nieuwste bovenaan? Klik rechts boven de lijst op <span class="ui">Sorteren</span> › <span class="ui">Naam</span> › <span class="ui">A tot Z</span>.</span></li>
+              <li><span class="doe-tekst">Doe dat voor de drie bonnen.</span></li>
+              <li><details class="stapjes" open><summary><span class="doe-tekst">Zet de nieuwste bon bovenaan.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
+                <ol class="klein">
+                  <li><p>Klik rechts boven de lijst op <span class="ui">Sorteren</span>. Kies <span class="ui">Naam</span> en <span class="ui">Z tot A</span>.<span class="sub">Drive onthoudt dat voor al je mappen.</span></p><img class="mini" src="assets/screenshots/stap4-sorteren.png" alt="Het menu Sorteren. Een rood kader rond 1 de knop Sorteren, 2 Naam en 3 Z tot A." loading="lazy"></li>
+                  <li><p>Staat de bon van 13 oktober nu bovenaan? De foto staat boven de bonnen: ze heeft nog geen datum.</p></li>
+                </ol>
+              </details></li>
               <li><span class="doe-tekst">Schrijf de nieuwe namen in <strong>deel 1</strong> van je werkdocument.</span></li>
             </ol>
             <figure class="clip">
-              <video src="assets/video/stap4-datum-vooraan.mp4" poster="assets/video/stap4-datum-vooraan.jpg" autoplay loop muted playsinline controls preload="metadata" aria-label="Filmpje: rechtermuisknop op de bon, Naam wijzigen, Home, de datum 2026-10-13 typen, OK. De bon staat nu bovenaan."></video>
+              <video src="assets/video/stap4-datum-vooraan.mp4" poster="assets/video/stap4-datum-vooraan.jpg" autoplay loop muted playsinline controls preload="metadata" aria-label="Filmpje: rechtermuisknop op de bon, Naam wijzigen, Home, de datum 2026-10-13 typen, OK."></video>
               <figcaption>Filmpje van 13 seconden. De nummers horen bij de handelingen hierboven.</figcaption>
             </figure>
-            <figure class="shot" data-shot="stap4-leveringen-klaar.png" data-caption="Zo ziet je map Leveringen er daarna uit: de oudste bon bovenaan, de foto onderaan." data-alt="De map Leveringen in Google Drive met drie bonnen die met een datum beginnen, van 2026-09-28 tot 2026-10-13, en onderaan de foto."></figure>
+            <figure class="shot" data-shot="stap4-leveringen-klaar.png" data-caption="Zo ziet je map Leveringen er daarna uit: Z tot A, de nieuwste bon bovenaan. De foto zonder datum staat erboven." data-alt="De map Leveringen in Google Drive, gesorteerd van Z tot A: bovenaan de foto, dan drie bonnen die met een datum beginnen, van 2026-10-13 tot 2026-09-28."></figure>
           </div>
           <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Is de naam weg, en staat er alleen een datum?</strong> Je typte zonder <span class="key">Home</span>. Klik op <span class="ui">Annuleren</span> en begin opnieuw. Klikte je al op <span class="ui">OK</span>? Typ dan de hele naam: datum, spatie, <code>Leveringsbon - </code>, de naam van het bedrijf en <code>.docx</code>.</p></div>
-          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> in Leveringen de drie bonnen met de datum beginnen, de oudste bovenaan.</span></p>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> in Leveringen de drie bonnen met de datum beginnen, de nieuwste bovenaan.</span></p>
         </div>
         <footer class="card-nav">
           <button class="btn" type="button" data-goto="3"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 3</button>
@@ -472,7 +479,7 @@
           <h2 id="h-5">Op nummer: de facturen</h2>
         </header>
         <div class="card-body">
-          <p class="intro">Facturen klasseer je op nummer: het kleinste bovenaan. Je werkt zoals in stap 4, maar met het factuurnummer.</p>
+          <p class="intro">Facturen klasseer je op nummer. Elke nieuwe factuur krijgt een hoger nummer. Met <span class="ui">Z tot A</span> staat dus ook hier de nieuwste bovenaan. Je werkt zoals in stap 4, maar met het factuurnummer.</p>
 
           <div class="nameplate">
             <div class="nameplate-head">Zo heet een factuur in het klassement</div>
@@ -496,13 +503,13 @@
                   <li><p>Klik op <span class="ui">OK</span>.</p><img class="mini" src="assets/stapjes/ok.png" alt="Het venster Naam wijzigen. De knop OK staat in een rood kader." loading="lazy"></li>
                 </ol>
               </details></li>
-              <li><span class="doe-tekst">Doe dat voor de drie facturen. Staat het kleinste nummer bovenaan?</span></li>
+              <li><span class="doe-tekst">Doe dat voor de drie facturen. Staat het hoogste nummer bovenaan?</span></li>
               <li><span class="doe-tekst">Schrijf de nieuwe namen in <strong>deel 2</strong> van je werkdocument.</span></li>
             </ol>
-            <figure class="shot" data-shot="stap5-facturen-klaar.png" data-caption="Zo ziet je map Facturen er daarna uit: het kleinste nummer bovenaan." data-alt="De map Facturen in Google Drive met drie facturen die met een nummer beginnen, van 2026-0398 tot 2026-0417."></figure>
+            <figure class="shot" data-shot="stap5-facturen-klaar.png" data-caption="Zo ziet je map Facturen er daarna uit: het hoogste nummer bovenaan." data-alt="De map Facturen in Google Drive met drie facturen die met een nummer beginnen, van 2026-0417 tot 2026-0398."></figure>
           </div>
           <div class="tip warn"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><p><strong>Begint je naam met een datum?</strong> Op een factuur staat ook een datum. Die gebruik je nu niet. Kies het <strong>factuurnummer</strong>.</p></div>
-          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> in Facturen de drie facturen met het nummer beginnen, het kleinste bovenaan.</span></p>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> in Facturen de drie facturen met het nummer beginnen, het hoogste bovenaan.</span></p>
         </div>
         <footer class="card-nav">
           <button class="btn" type="button" data-goto="4"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 4</button>
@@ -525,7 +532,7 @@
           <p class="intro">Kijk nog één keer in je mappen. Test dan of je het onthouden hebt. Er wordt niets bewaard.</p>
 
           <div class="quiz">
-            <div class="quiz-q" data-ok="Juist: jaar-maand-dag, vooraan. Dan staat de oudste bon bovenaan." data-nok="Nog niet. Kijk naar het voorbeeld in rij 1 van deel 1.">
+            <div class="quiz-q" data-ok="Juist: jaar-maand-dag, vooraan. Met Z tot A staat de nieuwste bon dan bovenaan." data-nok="Nog niet. Kijk naar het voorbeeld in rij 1 van deel 1.">
               <p>1. Welke naam past in het klassement van de leveringsbonnen?</p>
               <div class="opts">
                 <button type="button">13-10-2026 Leveringsbon - Bakkerij Korstjes.docx</button>
@@ -535,7 +542,7 @@
               <p class="feedback" role="status"></p>
             </div>
             <div class="quiz-q" data-ok="Juist. Alle namen beginnen met Prijslijst -, dus de naam van de leverancier bepaalt de volgorde." data-nok="Nog niet. Kijk naar de namen in de map Prijslijsten: hoe beginnen ze?">
-              <p>2. Waarom staan je prijslijsten vanzelf van A tot Z?</p>
+              <p>2. Waarom staan je prijslijsten vanzelf op alfabet?</p>
               <div class="opts">
                 <button type="button">Omdat Drive ze op datum zet</button>
                 <button type="button" data-right>Omdat ze allemaal met Prijslijst - beginnen, en dan de naam van de leverancier</button>
@@ -543,11 +550,11 @@
               </div>
               <p class="feedback" role="status"></p>
             </div>
-            <div class="quiz-q" data-ok="Juist. Drive leest van links naar rechts: 0 komt vóór 2. Maar 28 september is ouder! Daarom schrijf je jaar-maand-dag." data-nok="Nog niet. Drive leest de naam van links naar rechts, teken per teken.">
-              <p>3. Drive zet deze twee namen van A tot Z. Welke staat bovenaan?</p>
+            <div class="quiz-q" data-ok="Juist. Drive leest van links naar rechts: van Z tot A komt 2 vóór 0. Maar 2 oktober is nieuwer! Daarom schrijf je jaar-maand-dag." data-nok="Nog niet. Drive leest de naam van links naar rechts, teken per teken.">
+              <p>3. Drive zet deze twee namen van Z tot A. Welke staat bovenaan?</p>
               <div class="opts">
-                <button type="button" data-right>02-10-2026 Leveringsbon - Zuivelhoeve De Melkkan.docx</button>
-                <button type="button">28-09-2026 Leveringsbon - Fruitgroothandel Appelbloesem.docx</button>
+                <button type="button">02-10-2026 Leveringsbon - Zuivelhoeve De Melkkan.docx</button>
+                <button type="button" data-right>28-09-2026 Leveringsbon - Fruitgroothandel Appelbloesem.docx</button>
               </div>
               <p class="feedback" role="status"></p>
             </div>
@@ -556,7 +563,7 @@
           <div class="todo-box">
             <div class="todo-head"><h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3><div class="modus" role="group" aria-label="Hoe wil je de uitleg?"><button type="button" class="modus-btn" data-modus="stap" aria-pressed="true">Stap voor stap</button><button type="button" class="modus-btn" data-modus="kort" aria-pressed="false">Kort</button></div></div>
             <ol class="doe">
-              <li><span class="doe-tekst">Open de map <strong>Prijslijsten</strong>. Staan de leveranciers van A tot Z?</span><span class="sub">Je moest er niets voor doen: dat is een <strong>alfabetisch</strong> klassement.</span></li>
+              <li><span class="doe-tekst">Open de map <strong>Prijslijsten</strong>. Staan de leveranciers op alfabet?</span><span class="sub">Je moest er niets voor doen: dat is een <strong>alfabetisch</strong> klassement. Ze staan van Z tot A, omdat Drive in al je mappen dezelfde volgorde gebruikt. Het blijft alfabetisch, alleen omgekeerd.</span></li>
               <li><span class="doe-tekst">Loop de <strong>checklist</strong> na. Staat er nog iets open? Werk het eerst af.</span></li>
               <li><span class="doe-tekst">Beantwoord de drie vragen van <strong>deel 3</strong> in je werkdocument.</span></li>
               <li><details class="stapjes" open><summary><span class="doe-tekst">Lever in.</span><span class="stapjes-knop" aria-hidden="true"></span></summary>
@@ -565,7 +572,7 @@
                 </ol>
               </details></li>
             </ol>
-            <figure class="shot" data-shot="stap6-prijslijsten.png" data-caption="Je map Prijslijsten: vanzelf van A tot Z, op de naam van de leverancier." data-alt="De map Prijslijsten in Google Drive met drie prijslijsten: Fruitgroothandel Appelbloesem, Koffiebranderij De Bonenbaas en Zuivelhoeve De Melkkan."></figure>
+            <figure class="shot" data-shot="stap6-prijslijsten.png" data-caption="Je map Prijslijsten: alfabetisch op de naam van de leverancier, van Z tot A." data-alt="De map Prijslijsten in Google Drive met drie prijslijsten, van Z tot A: Zuivelhoeve De Melkkan, Koffiebranderij De Bonenbaas en Fruitgroothandel Appelbloesem."></figure>
           </div>
           <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> er bij de opdracht <em>Ingeleverd</em> staat.</span></p>
         </div>
@@ -626,7 +633,7 @@
       </div>
       <div class="cl-group" data-step="4"><h3>4 · Op datum</h3>
         <label class="cl-item"><input type="checkbox" id="c4a"><span>Drie bonnen met de datum vooraan</span></label>
-        <label class="cl-item"><input type="checkbox" id="c4b"><span>Oudste bon bovenaan</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4b"><span>Nieuwste bon bovenaan (Z tot A)</span></label>
         <label class="cl-item"><input type="checkbox" id="c4c"><span>Nieuwe namen in deel 1</span></label>
       </div>
       <div class="cl-group" data-step="5"><h3>5 · Op nummer</h3>
@@ -634,7 +641,7 @@
         <label class="cl-item"><input type="checkbox" id="c5b"><span>Nieuwe namen in deel 2</span></label>
       </div>
       <div class="cl-group" data-step="6"><h3>6 · Controleren en inleveren</h3>
-        <label class="cl-item"><input type="checkbox" id="c6a"><span>Prijslijsten van A tot Z bekeken</span></label>
+        <label class="cl-item"><input type="checkbox" id="c6a"><span>Prijslijsten op alfabet bekeken</span></label>
         <label class="cl-item"><input type="checkbox" id="c6b"><span>Zelftest gedaan</span></label>
         <label class="cl-item"><input type="checkbox" id="c6c"><span>Deel 3 ingevuld</span></label>
         <label class="cl-item"><input type="checkbox" id="c6d"><span>Werkdocument ingeleverd</span></label>
