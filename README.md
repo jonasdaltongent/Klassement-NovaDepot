@@ -48,7 +48,8 @@ W07 - Les 07 - ORLO - Het digitale klassement/
 │   ├── NovaDepot.zip                      # de map van les 06, kant-en-klaar: ook aan de opdracht hangen
 │   ├── nieuw/                             # de zes losse bestanden uit Nieuwe-documenten.zip
 │   ├── inhaal/NovaDepot/                  # de inhoud van NovaDepot.zip
-│   └── maak_werkdocumenten.py             # maakt alles opnieuw (python-docx, openpyxl)
+│   ├── maak_werkdocumenten.py             # maakt alles opnieuw (python-docx, openpyxl)
+│   └── huisstijl.py, go-dalton-gent.png   # de huisstijl van het werkdocument (uit _sjablonen/lespakket/werkdocument/)
 ├── lesvoorbereiding.md
 ├── dalton-lesfiche.html         # openen, Kopieer de fiche, plakken in je planner
 ├── classroom.json               # de opdracht voor _tools/zet_opdracht_klaar.py
@@ -297,6 +298,8 @@ De repository krijgt dezelfde `pre-push` hook als de andere lessen: bij elke pus
 - **Stap voor stap / Kort** (overgenomen van MW les 03, 11-10-2026): kiezen leerlingen zelf *Kort*? Wordt de
   pagina met alle beelden te lang? Vinden wie les 06 miste handeling 4 van stap 1?
 - Komen ze vlotter op gang na de controledia en *Iedereen doet stap 1*?
+- **Het nieuwe werkdocument** (12-10-2026): geen naam/klas/datum en geen *Zo werk je* meer, antwoorden in lichtblauwe
+  vakken. Typen ze vlot in de vakken van deel 1 en 2? Missen ze de uitleg die nu alleen op de lespagina staat?
 
 
 1. **Uitpakken in lokaal 18.** De help zegt alleen *Alles uitpakken… en volg de instructies*. De pagina zegt

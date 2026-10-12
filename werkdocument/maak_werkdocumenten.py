@@ -33,8 +33,9 @@ LET OP bij aanpassen:
 import os
 import zipfile
 
+import huisstijl as hs   # de huisstijl van het werkdocument (uit _sjablonen/lespakket/werkdocument/)
+
 from docx import Document
-from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
@@ -50,7 +51,6 @@ ZIP_INHAAL = os.path.join(HERE, "NovaDepot.zip")
 
 NAVY = RGBColor(0x2A, 0x39, 0x73)
 GREY = RGBColor(0x4D, 0x55, 0x73)
-GRIJS = RGBColor(0x80, 0x80, 0x80)
 
 # ---------- de gegevens (fictief) ----------
 ADRES = {
@@ -143,17 +143,6 @@ def tekst(doc, s, vet=False, klein=False, cursief=False, na=6, grootte=11, kleur
     return p
 
 
-def kop(doc, s, grootte=13, voor=14):
-    p = doc.add_paragraph()
-    p.paragraph_format.space_before = Pt(voor)
-    p.paragraph_format.space_after = Pt(4)
-    p.paragraph_format.keep_with_next = True
-    r = p.add_run(s)
-    lettertype(r)
-    r.bold = True
-    r.font.size = Pt(grootte)
-    r.font.color.rgb = NAVY
-    return p
 
 
 def _voeg_in_voor(ouder, el, opvolgers):
@@ -217,103 +206,42 @@ def cel_tekst(cel, s, vet=False, grootte=10.5, cursief=False):
     r.font.size = Pt(grootte)
 
 
-def antwoordlijnen(doc, aantal=2):
-    for _ in range(aantal):
-        p = doc.add_paragraph()
-        p.paragraph_format.space_after = Pt(2)
-        r = p.add_run("_" * 78)
-        lettertype(r)
-        r.font.color.rgb = GRIJS
 
 
-def tabel_met_voorbeeld(doc, koppen, breedtes, rijen):
-    """Een tabel met kopregel; rij 1 staat al ingevuld (cursief) als voorbeeld."""
-    t = doc.add_table(rows=len(rijen) + 1, cols=len(koppen))
-    t.style = "Table Grid"
-    t.alignment = WD_TABLE_ALIGNMENT.CENTER
-    vaste_tabel(t, breedtes)
-    for i, k in enumerate(koppen):
-        cel_tekst(t.rows[0].cells[i], k, vet=True)
-        schaduw(t.rows[0].cells[i])
-    for i, rij in enumerate(rijen, start=1):
-        for j, w in enumerate(rij):
-            if w:
-                cel_tekst(t.rows[i].cells[j], w, cursief=(i == 1), grootte=9.5)
-        t.rows[i].height = Cm(1.1)
-    return t
 
 
 # ---------- 1. Het werkdocument ----------
 def werkdocument():
-    doc = basis_document("WP2 Het digitale klassement - werkdocument")
+    """In de huisstijl van 12-10-2026 (huisstijl.py): alleen wat de leerling invult. Hoe hij werkt, staat op
+    de lespagina (stap 4 en 5, de tip bij stap 5 over de datum op een factuur, de Extra-pagina)."""
+    doc = hs.nieuw_document()
+    doc.core_properties.title = "WP2 Het digitale klassement - werkdocument"
+    hs.kopblok(doc, "HET DIGITALE KLASSEMENT", punten=20)
 
-    p = doc.add_paragraph()
-    p.paragraph_format.space_after = Pt(0)
-    r = p.add_run("WERKDOCUMENT — HET DIGITALE KLASSEMENT")
-    lettertype(r)
-    r.bold = True
-    r.font.size = Pt(18)
-    r.font.color.rgb = NAVY
-    tekst(doc, "Les 07 — Mijn digitale werkplek 2  ·  Toegepaste Informatica  ·  NovaDepot", klein=True, na=8)
+    hs.deel(doc, 1, "Leveringsbonnen: op datum")
+    hs.tabel(doc, ["Van wie?", "Datum (jaar-maand-dag)", "Nieuwe naam"], RIJEN_BONNEN, [4.4, 3.6, 9.0],
+             invul=(1, 2), rijhoogte=1.1, voorbeeld_rij=1)
 
-    t = doc.add_table(rows=1, cols=3)
-    t.style = "Table Grid"
-    vaste_tabel(t, [7.0, 4.5, 5.5])
-    for i, label in enumerate(["Naam:", "Klas:", "Datum:"]):
-        cel_tekst(t.rows[0].cells[i], label + " ", vet=True, grootte=11)
+    hs.deel(doc, 2, "Facturen: op nummer")
+    hs.tabel(doc, ["Van wie?", "Factuurnummer", "Nieuwe naam"], RIJEN_FACTUREN, [4.4, 3.6, 9.0],
+             invul=(1, 2), rijhoogte=1.1, voorbeeld_rij=1)
 
-    kop(doc, "Zo werk je", 12, voor=10)
-    for s in [
-        "1.  Op de lespagina lees je wat je moet doen, stap voor stap.",
-        "2.  In Google Drive maak je je klassement. Dat is je echte werk.",
-        "3.  In dit werkdocument schrijf je op wat je deed.",
-        "4.  Alleen DIT document lever je in.",
-    ]:
-        tekst(doc, s, na=1)
+    hs.deel(doc, 3, "Drie vragen")
+    hs.vraag(doc, "Vraag 1. Je map Prijslijsten staat vanzelf op alfabet. Hoe heet zo'n klassement? "
+                  "Waarom moest je daar geen namen veranderen?")
+    hs.antwoordvak(doc, 1.8)
+    hs.vraag(doc, "Vraag 2. Waarom schrijf je de datum als 2026-10-02 en niet als 02-10-2026?")
+    hs.antwoordvak(doc, 1.8)
+    hs.vraag(doc, "Vraag 3. Waarom klasseert een bedrijf zijn documenten? Geef één reden.")
+    hs.antwoordvak(doc, 1.3)
 
-    # ---- deel 1 ----
-    kop(doc, "Deel 1 — Leveringsbonnen: op datum (stap 4)")
-    tekst(doc, "Lees de datum bovenaan de bon. Schrijf ze als jaar-maand-dag. Rij 1 is een voorbeeld: "
-               "geef die bon in je Drive ook die naam.", klein=True)
-    tabel_met_voorbeeld(doc, ["Van wie?", "Datum (jaar-maand-dag)", "Nieuwe naam"], [4.4, 3.6, 9.0], RIJEN_BONNEN)
-
-    # ---- deel 2 ----
-    kop(doc, "Deel 2 — Facturen: op nummer (stap 5)")
-    tekst(doc, "Lees het factuurnummer bovenaan de factuur. Op de factuur staat ook een datum: die gebruik je "
-               "niet. Rij 1 is een voorbeeld.", klein=True)
-    tabel_met_voorbeeld(doc, ["Van wie?", "Factuurnummer", "Nieuwe naam"], [4.4, 3.6, 9.0], RIJEN_FACTUREN)
-
-    # ---- deel 3 ----
-    kop(doc, "Deel 3 — Drie vragen (stap 6)")
-    tekst(doc, "Vraag 1. Je map Prijslijsten staat vanzelf op alfabet. Hoe heet zo'n klassement? "
-               "Waarom moest je daar geen namen veranderen?", vet=True, na=2)
-    antwoordlijnen(doc, 2)
-    tekst(doc, "Vraag 2. Waarom schrijf je de datum als 2026-10-02 en niet als 02-10-2026?", vet=True, na=2)
-    antwoordlijnen(doc, 2)
-    tekst(doc, "Vraag 3. Waarom klasseert een bedrijf zijn documenten? Geef één reden.", vet=True, na=2)
-    antwoordlijnen(doc, 1)
-
-    # ---- zelfcontrole ----
-    kop(doc, "Zelfcontrole — aankruisen vóór je inlevert")
-    for s in [
-        "In NovaDepot staan geen losse bestanden meer: alles zit in een map.",
-        "In Leveringen staan de bonnen met de datum vooraan. De nieuwste staat bovenaan (Z tot A).",
-        "In Facturen staan de facturen met het nummer vooraan. Het hoogste staat bovenaan.",
-        "Achter elke naam staat nog .docx of .xlsx.",
-        "Deel 1, 2 en 3 zijn ingevuld.",
-    ]:
-        tekst(doc, "☐  " + s, na=1)
-
-    # ---- extra ----
-    kop(doc, "Extra — niet verplicht")
-    tekst(doc, "Alleen als je al ingeleverd hebt. Klik in de opdracht op Inleveren ongedaan maken. "
-               "Lever daarna opnieuw in.", klein=True)
-    tekst(doc, "a) De foto in Leveringen heeft ook een datum: kijk naar het etiket op de foto. "
-               "Welke naam geef je de foto?", vet=True, na=2)
-    antwoordlijnen(doc, 1)
-    tekst(doc, "b) Op 08-10-2026 leverde Sapfabriek Fris. Hoe heet die leveringsbon? "
-               "Tussen welke twee bonnen komt hij te staan?", vet=True, na=2)
-    antwoordlijnen(doc, 2)
+    hs.deel(doc, None, "Extra — niet verplicht")
+    hs.vraag(doc, "a) De foto in Leveringen heeft ook een datum: kijk naar het etiket op de foto. "
+                  "Welke naam geef je de foto?")
+    hs.antwoordvak(doc, 1.2)
+    hs.vraag(doc, "b) Op 08-10-2026 leverde Sapfabriek Fris. Hoe heet die leveringsbon? "
+                  "Tussen welke twee bonnen komt hij te staan?")
+    hs.antwoordvak(doc, 1.8)
 
     doc.save(UIT)
 

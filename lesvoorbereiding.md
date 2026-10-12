@@ -81,7 +81,7 @@ Keuze volgens het lessenplan (les 07: **`BK2_02.09`** (`.01`–`.03`) · `BV2_04
   toepassingen om digitale inhouden te beheren.* · **Toepassen** — uploaden, verplaatsen, hernoemen, sorteren.
 - **BK2_02.06.02** — *De leerlingen bewaren digitale documenten volgens een logische mappenstructuur.* — de
   mappen van les 06.
-- **BK2_01.02** — *De leerlingen handelen onder begeleiding kwaliteitsbewust.* — de checklist en de zelfcontrole.
+- **BK2_01.02** — *De leerlingen handelen onder begeleiding kwaliteitsbewust.* — de checklist en de zelftest op de lespagina.
 
 **Bewust niet opgenomen**
 
@@ -138,11 +138,12 @@ Onderwerp **Digitale competenties**. Eén opdracht in elke klas, *Werkplek 2 —
 
 ## 14. Het individuele werkdocument
 
-**WP2_Het-digitale-klassement** (gegenereerd met `werkdocument/maak_werkdocumenten.py`): kopregel · *Zo werk je* ·
-**deel 1** leveringsbonnen: tabel *Van wie? · Datum (jaar-maand-dag) · Nieuwe naam*, **rij 1 ingevuld** (Bakkerij
-Korstjes) · **deel 2** facturen: tabel *Van wie? · Factuurnummer · Nieuwe naam*, **rij 1 ingevuld** (Papierhandel
-Vellekens) · **deel 3** drie vragen (alfabetisch klassement, waarom jaar-maand-dag, waarom klasseren) ·
-zelfcontrole · extra (de foto, een nieuwe bon). Verwachte antwoorden: `README.md` §4.
+**WP2_Het-digitale-klassement** (gegenereerd met `werkdocument/maak_werkdocumenten.py`, huisstijl van 12-10-2026):
+logo, titel en puntenvak (/20) · **deel 1** leveringsbonnen: tabel *Van wie? · Datum (jaar-maand-dag) · Nieuwe naam*,
+**rij 1 ingevuld** (Bakkerij Korstjes) · **deel 2** facturen: tabel *Van wie? · Factuurnummer · Nieuwe naam*, **rij 1
+ingevuld** (Papierhandel Vellekens) · **deel 3** drie vragen (alfabetisch klassement, waarom jaar-maand-dag, waarom
+klasseren) · extra (de foto, een nieuwe bon). Elk antwoord in een lichtblauw vak; de uitleg staat op de lespagina,
+de zelfcontrole is de checklist en de zelftest van de lespagina. Verwachte antwoorden: `README.md` §4.
 
 ## 15–17. Korte klassikale instructie en demonstratie (Ik doe → Jullie doen)
 
