@@ -305,7 +305,8 @@ De repository krijgt dezelfde `pre-push` hook als de andere lessen: bij elke pus
 1. **Uitpakken in lokaal 18.** De help zegt alleen *Alles uitpakken… en volg de instructies*. De pagina zegt
    daarom *bevestig in het venster dat opengaat*. Heet de nieuwe map in Downloads echt `Nieuwe-documenten`?
 2. **De toets Home.** Op een Belgisch toetsenbord staat er soms een pijl ↖ of *Début* op. Onder stapje b van
-   stap 4 staat de terugweg: de pijl naar links ←.
+   stap 4 staat de terugweg: de pijl naar links ←. Sinds 12-10-2026 staat er een foto van het toetsenbord in
+   het lokaal bij (`assets/stapjes/home-toets.jpg`, Home in een rood kader): in stap 4, stap 5 en op de demodia.
 3. **Map uploaden (inhalen).** Chrome vraagt of je de bestanden wil uploaden; de pagina zegt *bevestig*. Ga na
    of dat bij een leerlingaccount ook zo loopt.
 4. **Twee schrijfwijzen van de datum.** De bon van Korstjes (uit les 06) schrijft *13 oktober 2026*, de nieuwe bonnen

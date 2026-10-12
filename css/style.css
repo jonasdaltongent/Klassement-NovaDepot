@@ -500,6 +500,7 @@ body:not([data-ai-hulp="aan"]) .ai-hulp { display: none !important; }
 }
 .klein p { margin: 0; }
 .klein .sub { display: block; color: var(--muted); font-size: .93rem; margin-top: .25rem; }
+.klein .toets-foto { display: block; width: 100%; max-width: 260px; height: auto; margin-top: .55rem; border-radius: 8px; }
 .klein img.mini { width: auto; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; display: block; justify-self: start; }
 @container (max-width: 760px) { .klein > li { grid-template-columns: 1fr; gap: .5rem; } }
 

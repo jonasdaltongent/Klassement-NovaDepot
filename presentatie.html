@@ -20,6 +20,7 @@
     .steps1 { margin: 0; padding-left: 1.2em; }
     .steps1 li { font-size: 27px; margin-bottom: 14px; }
     .steps1 li:last-child { margin-bottom: 0; }
+    .toets-foto { width: 100%; height: auto; border-radius: 12px; border: 2px solid #D6D5CB; display: block; }
     .lbl { font-weight: 700; font-size: 22px !important; margin: 0 0 10px; color: var(--navy-deep); }
     /* Een mappenboom (dia 2) */
     .boom { list-style: none; padding: 0 !important; margin: 0; }
@@ -199,12 +200,15 @@
   <p class="kicker">Ik doe · dia 4 van 4 · demo</p>
   <h2>De datum vooraan</h2>
   <p class="fname"><span class="sl">2026-10-13</span> Leveringsbon - Bakkerij Korstjes<span class="ext">.docx</span></p>
-  <div class="panel">
-    <ol class="steps1">
-      <li>Rechtermuisknop op de bon › <span class="mono">Naam wijzigen</span></li>
-      <li>Druk op <span class="mono">Home</span>: de cursor springt vooraan.</li>
-      <li>Typ <span class="mono">2026-10-13</span> en een spatie › <span class="mono">OK</span></li>
-    </ol>
+  <div class="two" style="grid-template-columns: 1fr 330px; align-items: center">
+    <div class="panel">
+      <ol class="steps1">
+        <li>Rechtermuisknop op de bon › <span class="mono">Naam wijzigen</span></li>
+        <li>Druk op <span class="mono">Home</span>: de cursor springt vooraan.</li>
+        <li>Typ <span class="mono">2026-10-13</span> en een spatie › <span class="mono">OK</span></li>
+      </ol>
+    </div>
+    <img class="toets-foto" src="assets/stapjes/home-toets.jpg" alt="Foto van een toetsenbord. De toets Home staat in een rood kader, tussen Insert en Page Up.">
   </div>
   <p class="reveal-item" style="color:#A0372A;margin-top:18px"><strong>Zonder Home</strong> typ je over de hele naam. Dan is ze weg.</p>
   <template class="note">
