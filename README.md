@@ -7,6 +7,7 @@
 (`Leerplannen/Lessenplan_TOINFO_ORLO_arbeidsmarkt_2026-2027.md`)
 **Toestel:** **lokaal 18, Windows 11** — Google Workspace in Chrome en de Verkenner
 **Lesdag:** uur 1 van week 7: 4ORLOb di 13 oktober (8ste uur) · 3ORLO di 13 oktober (9de uur) · 4ORLOa wo 14 oktober (4de uur)
+· **tweede uur** (sinds 13-10-2026: les 08 vervalt): 3ORLO wo 14 oktober (2de uur) · 4ORLOb wo 14 oktober (3de uur) · 4ORLOa do 15 oktober (7de uur)
 **Kernleerplandoelen:** `BK2_02.09` (`.01`–`.03`, klassementen) — toepassen
 **Deadline:** vrijdag 16 oktober 2026, 20.00 uur · 20 punten
 
@@ -33,7 +34,7 @@ nummer** (het factuurnummer vooraan), en de prijslijsten staan vanzelf **op naam
 ```text
 W07 - Les 07 - ORLO - Het digitale klassement/
 ├── index.html                   # de lespagina: route · één stap · checklist
-├── presentatie.html             # 10 dia's; dia 7 controle, dia 8 samen stap 1, dia 9 kloktijden
+├── presentatie.html             # 11 dia's; dia 2 alleen in het tweede uur, dia 8 controle, dia 9 samen stap 1, dia 10 kloktijden
 ├── css/style.css, css/slides.css
 ├── js/script.js, js/slides.js
 ├── assets/
@@ -64,8 +65,8 @@ klassement*), midden **één stap** met vijf vaste blokken, rechts de **checklis
 venster staat alles onder elkaar en zie je alleen de taken van de huidige stap; in stap 6 staat de hele lijst open.
 
 - 2 tot 5 handelingen per stap, één tip per stap (de fout die het vaakst gebeurt).
-- **Stap 3** en **stap 4** hebben een filmpje van 13 seconden dat vanzelf herhaalt, met nummers die bij de
-  handelingen horen. Stap 4, 5 en 6 tonen ook een schermafbeelding van het resultaat: *zo ziet je map er daarna uit*.
+- **Stap 4** heeft een filmpje van 13 seconden dat vanzelf herhaalt, met nummers die bij de handelingen horen.
+  **Stap 3** toont sinds 13-10-2026 tekeningen van het slepen (het filmpje van *Ordenen › Verplaatsen* staat niet meer op de pagina). Stap 4, 5 en 6 tonen ook een schermafbeelding van het resultaat: *zo ziet je map er daarna uit*.
 - De **naamkaart** in stap 4 en 5 toont in kleur wat er vooraan komt (de datum, het nummer) en wat blijft staan.
 - De **zelftest** in stap 6 heeft drie vragen, waarvan één de valkuil is: van Z tot A staat `28-09-2026` vóór
   `02-10-2026`, terwijl 2 oktober nieuwer is.
@@ -88,6 +89,10 @@ venster staat alles onder elkaar en zie je alleen de taken van de huidige stap; 
   tekeningen in HTML en CSS (`.mock-opdracht`, `.teken-tabs`, `.teken-ui`): van de Verkenner zijn er geen
   schermafbeeldingen. Handeling 4 van stap 1 (*les 06 gemist*) heeft `data-dicht`: ze blijft dicht, ook in
   *Stap voor stap*.
+- **Bijgestuurd na het eerste uur** (13-10-2026, Jonas na 4ORLOb en 3ORLO: tijd te krap, niemand snel klaar; les 08 vervalt):
+  stap 3 met **slepen** (`_afspraken/klikpaden.md`); in stap 1 en 2 *Weergeven in map* in de downloads van Chrome, zodat ze
+  hun zip-bestand ook in een volle map Downloads vinden; de startpagina groter (vier beelden in 2 × 2, grotere logo's);
+  dia 2 *Waar ben je gebleven?* voor het tweede uur; dia 11 kondigt *Een veilig account* (les 09) aan.
 
 ---
 
@@ -99,7 +104,7 @@ Repository [`jonasdaltongent/Klassement-NovaDepot`](https://github.com/jonasdalt
 Pages op branch `main`, map `/ (root)`. De lespagina staat op
 [jonasdaltongent.github.io/Klassement-NovaDepot](https://jonasdaltongent.github.io/Klassement-NovaDepot/), de dia's op
 […/presentatie.html](https://jonasdaltongent.github.io/Klassement-NovaDepot/presentatie.html); dat adres staat
-ook op dia 7, in `classroom.json` en in `lesdoelen.json`. Live bestanden nagekeken: gelijk aan de lokale.
+ook op dia 10, in `classroom.json` en in `lesdoelen.json`. Live bestanden nagekeken: gelijk aan de lokale.
 
 ### Stap 2 — De opdracht in Classroom, met de koppeling ✅ *concept op 09-10-2026*
 
@@ -143,13 +148,13 @@ Instructietekst (vult het script in):
 
 ### De demo klaarzetten (2 minuten)
 
-Je doet op dia 6 de bon van Bakkerij Korstjes voor, in een eigen map NovaDepot. Pak `werkdocument/NovaDepot.zip`
+Je doet op dia 7 de bon van Bakkerij Korstjes voor, in een eigen map NovaDepot. Pak `werkdocument/NovaDepot.zip`
 uit en zet de map in je Drive met **Nieuw** › **Map uploaden**. Zo heb je dezelfde map als een leerling na les 06,
 en heb je meteen de inhaalweg zelf eens gedaan.
 
 ### Afvinklijst vóór de les
 
-- [ ] De lespagina staat online en het adres op dia 9 klopt.
+- [ ] De lespagina staat online en het adres op dia 10 klopt.
 - [ ] De opdracht staat in de drie klassen, met vier bijlagen en de juiste instelling per bijlage.
 - [ ] Een testleerling krijgt een eigen kopie van het werkdocument, met de eigen naam in de titel.
 - [ ] Met een **leerlingaccount** getest: de zip downloaden uit de opdracht (Openen met › Openen in nieuw tabblad › pijl linksboven).
@@ -168,7 +173,8 @@ schermafbeeldingen (Claude)*, en in de Nederlandse help:
 | Verkenner | **Windows** + **E**, links **Downloads** | [Microsoft](https://support.microsoft.com/nl-nl/windows/sneltoetsen-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec) |
 | Uitpakken (Windows 11) | rechtermuisknop op het zip-bestand › **Alles uitpakken…** en de instructies volgen; de pagina zegt *bevestig in het venster* (de knopnaam staat niet in de help) | [Microsoft](https://support.microsoft.com/nl-nl/windows/bestanden-comprimeren-en-uitpakken-8d28fa72-f2f9-712f-67df-f80cf89fd4e5), nagelezen 09-10-2026 |
 | Uploaden | **Nieuw** › **Bestand uploaden** · **Map uploaden** | jouw scherm (04-10 en 09-10-2026) |
-| Verplaatsen | rechtermuisknop › **Ordenen** › **Verplaatsen**; het venster opent op **Voorgesteld**: klik naast *Huidige locatie* op **NovaDepot**, kies de map › **Verplaatsen** | jouw scherm (08-10 en 09-10-2026) |
+| Verplaatsen | **slepen**: sleep het bestand naar de map en laat los (sinds 13-10-2026). In de tip, om een bestand uit de verkeerde map te halen: rechtermuisknop › **Ordenen** › **Verplaatsen**; het venster opent op **Voorgesteld**: klik naast *Huidige locatie* op **NovaDepot**, kies de map › **Verplaatsen** | [Drive 2375091](https://support.google.com/drive/answer/2375091?hl=nl), nagelezen 13-10-2026 · jouw scherm (08-10 en 09-10-2026) |
+| Download terugvinden | rechts naast de adresbalk de downloads › muis op de bestandsnaam › **Weergeven in map** | [Chrome 95759](https://support.google.com/chrome/answer/95759?hl=nl&co=GENIE.Platform%3DDesktop), nagelezen 13-10-2026 (niet op een scherm gezien) |
 | Naam wijzigen | rechtermuisknop › **Naam wijzigen**; de hele naam staat geselecteerd; **Home** zet de cursor vooraan en de naam blijft staan › **OK** (of **Annuleren**) | jouw scherm (09-10-2026) |
 | Sorteren | rechts boven de lijst **Sorteren** › onder *Sorteren op* **Naam**, onder *Sorteerrichting* **A tot Z** (of **Z tot A**); onder *Mappen* **Bovenaan** · **Tussen de bestanden** | jouw scherm (09-10-2026) |
 | Volgorde van Z tot A | letters komen vóór cijfers: de foto zonder datum staat boven de bonnen; de keuze geldt in alle mappen | jouw scherm (09-10-2026) · je demomap (12-10-2026) |
@@ -180,9 +186,12 @@ schermafbeeldingen (Claude)*, en in de Nederlandse help:
 
 | Fase | Tijd | Wat |
 |---|---|---|
-| **Instructie** | **10'** | Dia 1 terwijl de computers opstarten. Dia 2 lesstart (3'): *waar zit de factuur van Vellekens, en hoe heet ze?* Dia 3–6 (5'30"): lesdoel, drie mappen en drie manieren, de puzzel *waarom jaar-maand-dag?*, de demo met **Home**. Dia 7 controle (1'): *wat doe je eerst?* (Home). |
-| **Samen** | **3'** | Dia 8: iedereen doet stap 1 terwijl jij de schermen ziet; duim op als ze klaar zijn. |
-| **Keuzewerktijd** | **tot het einde** | Dia 9 blijft staan, met **kloktijden** uit de planning (`_tools/zet_lesmomenten.py`; T rekent opnieuw); stap 2 tot 6, inleveren inbegrepen. Dia 10 in de laatste minuut. |
+| **Instructie** | **10'** | Dia 1 terwijl de computers opstarten (dia 2 sla je over: die is voor het tweede uur). Dia 3 lesstart (3'): *waar zit de factuur van Vellekens, en hoe heet ze?* Dia 4–7 (5'30"): lesdoel, drie mappen en drie manieren, de puzzel *waarom jaar-maand-dag?*, de demo met **Home**. Dia 8 controle (1'): *wat doe je eerst?* (Home). |
+| **Samen** | **3'** | Dia 9: iedereen doet stap 1 terwijl jij de schermen ziet; duim op als ze klaar zijn. |
+| **Keuzewerktijd** | **tot het einde** | Dia 10 blijft staan, met **kloktijden** uit de planning (`_tools/zet_lesmomenten.py`; T rekent opnieuw); stap 2 tot 6, inleveren inbegrepen. Dia 11 in de laatste minuut. |
+
+**Tweede uur** (sinds 13-10-2026): dia 1 terwijl ze aanmelden, dan dia 2 *Waar ben je gebleven?*. In hun map zien ze bij welke
+stap ze verder moeten. Laat dia 2 staan; dia 11 in de laatste minuut. Bij het eerste uur sla je dia 2 over.
 
 Je doet alleen **de datum vooraan** voor. Het zip-bestand, het uitpakken en het verplaatsen kennen ze uit les 06;
 nieuw is alleen dat ze uitpakken in de **Verkenner** in plaats van in de app Bestanden van de Chromebook.
@@ -201,8 +210,8 @@ Zeg aan het einde mondeling dat wie niet klaar is, toch inlevert.
 
 ## 4. Verbetersleutel
 
-De leerling levert alleen het werkdocument in. De mappen zie je tijdens de rondgang; in les 08 delen de
-leerlingen hun map NovaDepot met jou (als kijker).
+De leerling levert alleen het werkdocument in. De mappen zie je tijdens de rondgang. (Les 08, waarin ze hun map
+NovaDepot met jou zouden delen, vervalt sinds 13-10-2026.)
 
 ### Deel 1 — Leveringsbonnen: op datum
 
@@ -258,7 +267,7 @@ in beeld, Mac-sneltoetsen in de menu's zijn afgedekt. De lijst staat in `assets/
 
 | Bestand | Waar |
 |---|---|
-| `video/stap3-verplaatsen.mp4` | stap 3: Ordenen › Verplaatsen › NovaDepot › Leveringen › Verplaatsen |
+| `video/stap3-verplaatsen.mp4` | niet meer op de pagina sinds 13-10-2026: stap 3 werkt met slepen (tekeningen) |
 | `video/stap4-datum-vooraan.mp4` | stap 4: Naam wijzigen › Home › datum › OK |
 | `video/zip-downloaden.mp4` | stap 2, onder de handelingen (uit les 06; een ander zip-bestand, dezelfde klikken) |
 | `screenshots/stap1-map-uploaden.png` | stap 1, handeling 4 (inhalen); ook als stapje `stapjes/map-uploaden.png` |
@@ -266,7 +275,9 @@ in beeld, Mac-sneltoetsen in de menu's zijn afgedekt. De lijst staat in `assets/
 | `screenshots/stap4-leveringen-klaar.png`, `stap5-facturen-klaar.png`, `stap6-prijslijsten.png` | stap 4, 5 en 6: zo ziet de map er daarna uit |
 | `screenshots/stap4-sorteren.png` | stap 4, handeling 5: Sorteren › Naam › Z tot A (opnieuw opgenomen op 12-10-2026, net als de drie beelden van het resultaat) |
 
-Er zijn geen beelden van de **Verkenner** (uitpakken): die kan ik vanaf je Mac niet maken. Wil je ze toch, maak
+Er zijn geen beelden van de **Verkenner** (uitpakken): die kan ik vanaf je Mac niet maken. Je vroeg op 13-10-2026 een
+opname van het hele proces (downloaden, uitpakken, uploaden): neem ze één keer op in lokaal 18, dan maak ik er een
+filmpje met nummers van. Wil je ze toch, maak
 dan in lokaal 18 een knipsel (**Windows** + **Shift** + **S**) en zet het in `assets/screenshots/`.
 
 ---
@@ -293,6 +304,11 @@ De repository krijgt dezelfde `pre-push` hook als de andere lessen: bij elke pus
 
 ## 8. Wat nog moet blijken in de klas
 
+- **Bijgestuurd op 13-10-2026**: lukt **slepen** met de muis in lokaal 18, en belanden er bestanden in de verkeerde map?
+  Staat **Weergeven in map** in de downloads van Chrome op de computers van lokaal 18 (help, niet op een scherm gezien),
+  en opent de Verkenner bij het zip-bestand? Volgen ze de **grotere startpagina** beter? Vinden ze met **dia 2** snel
+  waar ze waren?
+
 - **De nieuwste bovenaan** (12-10-2026): vinden ze *Z tot A*? Storen ze zich aan de foto bovenaan en aan de prijslijsten
   van Z tot A?
 - **Stap voor stap / Kort** (overgenomen van MW les 03, 11-10-2026): kiezen leerlingen zelf *Kort*? Wordt de
@@ -311,8 +327,7 @@ De repository krijgt dezelfde `pre-push` hook als de andere lessen: bij elke pus
    of dat bij een leerlingaccount ook zo loopt.
 4. **Twee schrijfwijzen van de datum.** De bon van Korstjes (uit les 06) schrijft *13 oktober 2026*, de nieuwe bonnen
    *28-09-2026*. Dat is bewust: rij 1 en de demo tonen de eerste, de leerling doet de tweede zelf.
-5. **4ORLOa** heeft les 07 op woensdag en les 08 al op donderdag: wie stap 6 niet haalt, werkt thuis af vóór
-   vrijdag 20.00 uur.
+5. **4ORLOa** heeft les 07 op woensdag (eerste uur) en donderdag (tweede uur, sinds 13-10-2026).
 6. **Haalbaarheid.** Stap 2 (downloaden, uitpakken, uploaden) is het riskante stuk. Loopt het vast, laat de
    leerlingen dan in stap 5 maar één factuur doen.
 7. **Nieuw sinds 09-10-2026, voor alle klassen**: de vaste startdia *Zo start je* (dia 1) en de startpagina met
