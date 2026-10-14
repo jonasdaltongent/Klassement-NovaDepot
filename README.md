@@ -61,7 +61,7 @@ W07 - Les 07 - ORLO - Het digitale klassement/
 ### 1b. Hoe de lespagina werkt
 
 Dezelfde opbouw als les 06: links de **route** (zes stappen in twee groepen: *Je map aanvullen* · *Je
-klassement*), midden **één stap** met vijf vaste blokken, rechts de **checklist** met 18 taken. Op een smal
+klassement*), midden **één stap** met vijf vaste blokken, rechts de **checklist** met 17 taken. Op een smal
 venster staat alles onder elkaar en zie je alleen de taken van de huidige stap; in stap 6 staat de hele lijst open.
 
 - 2 tot 5 handelingen per stap, één tip per stap (de fout die het vaakst gebeurt).
@@ -93,6 +93,10 @@ venster staat alles onder elkaar en zie je alleen de taken van de huidige stap; 
   stap 3 met **slepen** (`_afspraken/klikpaden.md`); in stap 1 en 2 *Weergeven in map* in de downloads van Chrome, zodat ze
   hun zip-bestand ook in een volle map Downloads vinden; de startpagina groter (vier beelden in 2 × 2, grotere logo's);
   dia 2 *Waar ben je gebleven?* voor het tweede uur; dia 11 kondigt *Een veilig account* (les 09) aan.
+- **Bijgestuurd na het tweede uur** (14-10-2026, Jonas na 3ORLO en 4ORLOb: deel 1 en 2 van het werkdocument bleven bij
+  velen leeg): in stap 4 en 5 schrijven ze elke nieuwe naam **meteen** in het werkdocument (handeling 4 van stap 4 en
+  handeling 3 van stap 5), niet pas op het einde; in de checklist van stap 4 staat *Nieuwe namen in deel 1* nu vóór het
+  sorteren; dia 2 vraagt ook naar het werkdocument (*Nee → schrijf ze nu*). Voor 4ORLOa (do 15-10, tweede uur).
 
 ---
 
@@ -304,7 +308,9 @@ De repository krijgt dezelfde `pre-push` hook als de andere lessen: bij elke pus
 
 ## 8. Wat nog moet blijken in de klas
 
-- **Bijgestuurd op 13-10-2026**: lukt **slepen** met de muis in lokaal 18, en belanden er bestanden in de verkeerde map?
+- **Bijgestuurd op 14-10-2026**: vullen ze het werkdocument nu wel in, als de nieuwe naam meteen na *Naam wijzigen* komt?
+- **Slepen lukt** (14-10-2026, 3ORLO en 4ORLOb): verplaatsen en hernoemen liepen vlot in het tweede uur.
+- **Bijgestuurd op 13-10-2026**: lukt **slepen** met de muis in lokaal 18 (ja, zie hierboven), en belanden er bestanden in de verkeerde map?
   Staat **Weergeven in map** in de downloads van Chrome op de computers van lokaal 18 (help, niet op een scherm gezien),
   en opent de Verkenner bij het zip-bestand? Volgen ze de **grotere startpagina** beter? Vinden ze met **dia 2** snel
   waar ze waren?
