@@ -308,6 +308,8 @@ De repository krijgt dezelfde `pre-push` hook als de andere lessen: bij elke pus
 
 ## 8. Wat nog moet blijken in de klas
 
+- **Het filmpje Inleveren** (15-10-2026, in de laatste stap, in elke les tot de leerlingen het systeem kennen): leveren ze
+  in zonder te vragen? Kijken ze naar het filmpje, en klikken ze in het venster *Je werk inleveren?* nog eens op *Inleveren*?
 - **Bijgestuurd op 14-10-2026**: vullen ze het werkdocument nu wel in, als de nieuwe naam meteen na *Naam wijzigen* komt?
 - **Slepen lukt** (14-10-2026, 3ORLO en 4ORLOb): verplaatsen en hernoemen liepen vlot in het tweede uur.
 - **Bijgestuurd op 13-10-2026**: lukt **slepen** met de muis in lokaal 18 (ja, zie hierboven), en belanden er bestanden in de verkeerde map?
