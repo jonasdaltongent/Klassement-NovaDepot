@@ -205,14 +205,19 @@ en in `dalton-lesfiche.html`.
 
 Op het **werkdocument** (20 punten in Classroom), nooit op de vinkjes. Verbetersleutel: `README.md` §4.
 
-| Criterium | Waar zichtbaar |
-|---|---|
-| de datum als jaar-maand-dag, vooraan | deel 1 |
-| het factuurnummer vooraan, niet de datum | deel 2 |
-| de naam van les 06 blijft staan | deel 1 en 2 |
-| alfabetisch klassement herkend | vraag 1 |
-| waarom jaar-maand-dag | vraag 2 |
-| het belang van klasseren | vraag 3 |
+| Criterium | Waar zichtbaar | Punten |
+|---|---|---|
+| de datum als jaar-maand-dag, vooraan | deel 1 | 4 |
+| het factuurnummer vooraan, niet de datum | deel 2 | 4 |
+| de naam van les 06 blijft staan | deel 1 en 2 | 4 |
+| alfabetisch klassement herkend | vraag 1 | 2 |
+| waarom jaar-maand-dag | vraag 2 | 4 |
+| het belang van klasseren | vraag 3 | 2 |
+
+De punten kwamen er bij het eerste verbeteren (18-10-2026): een voorstel van de AI, op 20, zoals
+`_afspraken/evaluatie-en-privacy.md` vraagt. *Extra* is niet verplicht en geeft geen punten. Per bon en per factuur:
+1 voor de juiste datum of het juiste nummer, 1 als die vooraan in de nieuwe naam staat; de naam van les 06: 1 per
+nieuwe naam.
 
 **Essentiële fouten:** de datum als dag-maand-jaar vooraan · bij een factuur de datum in plaats van het nummer ·
 de oude naam weg (alleen nog een datum of nummer) · het zip-bestand geüpload in plaats van de zes bestanden.
