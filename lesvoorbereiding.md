@@ -219,6 +219,13 @@ De punten kwamen er bij het eerste verbeteren (18-10-2026): een voorstel van de 
 1 voor de juiste datum of het juiste nummer, 1 als die vooraan in de nieuwe naam staat; de naam van les 06: 1 per
 nieuwe naam.
 
+**Jonas' beslissingen bij het verbeteren** (18-10-2026):
+
+- Vraag 2: "het voorkomt misverstanden tussen de Amerikaanse en de Europese notatie" krijgt 0 ("een duidelijk antwoord
+  van een LLM … niet toepasselijk voor onze leerstof"). Wat telt: de volgorde in Drive (van links naar rechts).
+- Twee leveranciers verwisseld, bij de bonnen en de facturen (de datums en nummers bestaan, maar staan bij de andere):
+  één vergissing, −1 in totaal ("niet super erg").
+
 **Essentiële fouten:** de datum als dag-maand-jaar vooraan · bij een factuur de datum in plaats van het nummer ·
 de oude naam weg (alleen nog een datum of nummer) · het zip-bestand geüpload in plaats van de zes bestanden.
 
